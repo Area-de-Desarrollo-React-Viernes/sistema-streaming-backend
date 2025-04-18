@@ -25,8 +25,9 @@ async function migrationRunDatabase() {
         username VARCHAR(256),
         email VARCHAR(256),
         password VARCHAR(256),
-        code_verification CHAR(6),
-        time_expired TIMESTAMP
+        code_verification VARCHAR(256),
+        time_expired TIMESTAMP,
+        login_type VARCHAR(256)
         );`);
     console.log('se creo users')
 
