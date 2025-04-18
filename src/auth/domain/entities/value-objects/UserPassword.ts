@@ -1,12 +1,12 @@
 export class UserPassword{
     constructor(
-        public readonly password: string
+        public readonly value: string
     ){}
 
     public typePassword(password: string): void
     {
-        if(typeof password === 'string'){
-            throw new Error('No es de tipo string');
+        if(typeof password !== 'string'){
+            throw new Error('El password no es de tipo string');
         }
     }
 }
