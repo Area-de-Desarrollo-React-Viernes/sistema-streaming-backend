@@ -1,4 +1,4 @@
-export class CreateUserDTO{
+export class CreateUserRequest{
     constructor(
         public username: string,
         public email: string,
