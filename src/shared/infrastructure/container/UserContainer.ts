@@ -8,17 +8,19 @@ import { ChangeVerifiedPassword } from "../../../auth/application/use-case/Chang
 import { CreateUserGoogleUseCase } from "../../../auth/application/use-case/CreateUserGoogleUseCase";
 import { UserAuthGoogleService } from "../../../auth/infrastructure/service/UserAuthGoogleServie";
 import { LoginUserGoogleUseCase } from "../../../auth/application/use-case/LoginUserGoogleUseCase";
+import { UserImageService } from "../../../auth/infrastructure/service/UserImageService";
 
 const authRepository = new UserMysqlPersistence();
 const emailRepository = new UserSendEmailService();
 const googleRepository = new UserAuthGoogleService();
+const imageRepository = new UserImageService();
 
 export const UserContainer = {
-    createUserEmail: new CreateUserRegisterEmailUseCase(authRepository),
+    createUserEmail: new CreateUserRegisterEmailUseCase(authRepository, imageRepository),
     sendCodeVerificationEmail: new GenerateCodeVerificationPasswordUseCase(authRepository, emailRepository),
     changeUsername: new ChangeUsernameUseCase(authRepository),
     loginEmail: new LoginUserEmailUseCase(authRepository),
     changePassword: new ChangeVerifiedPassword(authRepository),
-    createUserGoogle: new CreateUserGoogleUseCase(googleRepository),
+    createUserGoogle: new CreateUserGoogleUseCase(authRepository, googleRepository, imageRepository),
     loginUserGoogle: new LoginUserGoogleUseCase(googleRepository)
 }
