@@ -23,4 +23,7 @@ authRouter.post('/update-password', (req, res) => {
 authRouter.post('/register-google', (req, res) => {
     authController.createUserGoogle(req, res);
 });
+authRouter.post('/login-google', (req, res) => {
+    authController.loginUserGoogle(req, res);
+})
 export default authRouter;

@@ -7,6 +7,7 @@ import { UserExists } from "../../domain/exceptions/UserExists";
 import { admin } from "../../../shared/infrastructure/firebase/firebase-google";
 import jwt from "jsonwebtoken";
 import { CONFIG } from "../../../shared/config/config";
+import { UserNotFound } from "../../domain/exceptions/UserNotFound";
 
 export class UserAuthGoogleService implements AuthGoogleService {
     async createUserGoogle(token: string): Promise<string> {
@@ -25,9 +26,23 @@ export class UserAuthGoogleService implements AuthGoogleService {
         await pool.execute('INSERT INTO users (username, email, provider_id, email_verified, login_type) values(?, ?, ?, ?, ?)', [
             decodedToken.name, decodedToken.email, decodedToken.sub, decodedToken.email_verified, decodedToken.firebase.sign_in_provider
         ]);
-        const tokenJWT = jwt.sign({provider_id: decodedToken.sub}, CONFIG.jwt.secretJWT as string, {
+        const tokenJWT = jwt.sign({sub: decodedToken.sub}, CONFIG.jwt.secretJWT as string, {
             expiresIn: '4h'
         });
         return tokenJWT;
     }
+    async loginUserGoogle(token: string): Promise<string> {
+        const decodedToken = await admin.auth().verifyIdToken(token);
+        const [rows] = await pool.execute<RowDataPacket[]>('SELECT * FROM users WHERE email = ? AND provider_id = ?', [
+            decodedToken.email, decodedToken.sub
+        ]);
+        if(rows.length === 0){
+            throw new UserNotFound;
+        }
+        const tokenJWT = jwt.sign({sub: decodedToken.sub}, CONFIG.jwt.secretJWT as string, {
+            expiresIn: '4h'
+        }); 
+        return tokenJWT;
+    }
+    
 }

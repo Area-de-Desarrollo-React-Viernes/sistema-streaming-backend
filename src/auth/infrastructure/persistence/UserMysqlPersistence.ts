@@ -66,7 +66,7 @@ export class UserMysqlPersistence implements AuthenticateRepository {
         if(!bcrypt.compareSync(password.value, user.password)){
             throw new CredentialInvalid;
         }
-        const token = jwt.sign({id: user.id}, CONFIG.jwt.secretJWT as string, {
+        const token = jwt.sign({sub: user.id}, CONFIG.jwt.secretJWT as string, {
             expiresIn: '4h'
         });
         return token;

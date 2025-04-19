@@ -50,7 +50,7 @@ export class AuthController {
             res.status(201).json({
                 data: {
                     success: true,
-                    message: token
+                    token: token
                 }
             });
         }catch(error: HandlerException | any){
@@ -77,7 +77,20 @@ export class AuthController {
                 data:{
                     success: true,
                     message: 'Se registro exitosamente con Google',
-                    data: token
+                    token: token
+                }
+            });
+        }catch(error: HandlerException | any){
+            responseException(res, error);
+        }
+    }
+    async loginUserGoogle(req: Request, res: Response): Promise<void> {
+        try{
+            const token = await UserContainer.loginUserGoogle.run(req.body.token);
+            res.status(200).json({
+                data: {
+                    success: true,
+                    token: token
                 }
             });
         }catch(error: HandlerException | any){
