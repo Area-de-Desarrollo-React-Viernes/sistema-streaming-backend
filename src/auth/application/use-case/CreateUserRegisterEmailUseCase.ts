@@ -5,7 +5,7 @@ import { AuthenticateRepository } from "../../domain/repository/AuthenticateRepo
 import { CreateUserRequest } from "../dto/request/CreateUserRequest";
 import { UserInfoResponse } from "../dto/response/UserInfoResponse";
 
-export class createUserRegisterEmailUseCase {
+export class CreateUserRegisterEmailUseCase {
     constructor(
         private authRepository: AuthenticateRepository
     ) { }

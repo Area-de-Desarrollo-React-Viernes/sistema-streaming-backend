@@ -8,6 +8,8 @@ export interface AuthenticateRepository {
     createUserRegisterEmail(user: User): Promise<User>;
     getByEmail(email: UserEmail): Promise<User | null>;
     updateUsername(username: UserUsername, email: UserEmail): Promise<User>;
-    //updatePassword(codeVerification: UserCodeVerification, password: UserPassword): Promise<User>;
+    updateCodeGenerate(codeVerification: UserCodeVerification, email: UserEmail): Promise<void>;
+    loginUser(email: UserEmail, password: UserPassword): Promise<string>
+    updatePassword(codeVerification: UserCodeVerification, newPassword: UserPassword, email: UserEmail): Promise<void>;
     // deleteUser(ecodeVerification: UserCodeVerification): Promise<User>;
 }
