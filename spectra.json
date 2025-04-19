@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "spectra-ce773",
+  "private_key_id": "ef59a59ab7446db1f2ef5421bec73010b039892b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDYUiVtXSu449zt\nT/I/cF8UDCZBLZGMnH+aBuTxuEFohwHwSevG54BC/GlxgnapnWrLcZaDdyzu5rhT\noaN/vdt89G+mn4+8x9mVxxaOMN2qxQjUfzz1xAdgdwOINxfVOScUICPCop5Q8nGY\n4nYaDtN+yxlHNurZFdmvPhqe5heSMvEKecslTHHLp3/NF1WOexmStOuIHcyNOxE6\nyjkTzNTXFwshGP3uwN0AWQZhVEXMnrFfwx/4A6e+fSv+Sgpc7QdGhTtXCZGYk7qL\n8aCMyyqt98SphYOKO8/f7odKK6jAzaiCHHRKV68ezM/AL2hJpCkyVoJuLBLvBX57\nYHvJA3xFAgMBAAECggEAKYOoUaL4FVlLiJKXbcPRx13miIsne+n71hI9JUOEb/w6\n68Ov90Ht3E0nKkTMo5QFjwobRdsc+TM3jDtAzq7fvM0HUV2dXvAmqock5cBshg2e\nunM5vnuyo7lraNyT2xSHEqZxXnTJd8TzdpD9c9ZFEfgFv6RDMUqvdmFvh++l9eUt\nBnHFRs9AxxGcjxMF5ZrSeubGy6yfo1hMG52eEVcNjgc8i3ok/gB42fFl8qOWwWHs\ndfEZnGMk7wlRT0fbr4BJMX+NlLRfAr/xl8ASbTEko0UdtBevkJ2VkNjOkZfV/D94\ntZLwCl/Efp32bJS7GRtxWVI/+M7NIxStMQmhjnhekQKBgQDujt7Dvi/Xd7/7lwED\naL3G8CSGpLf4lTTAuxG0Q3do0+j6MnJabfpRHT0eV3FbA5Pn7VziQyscPQ6iX15G\n/SAvuRR9y8TO5Vp1mJIOqoRPSLmaMPwfkaJtVnaR5oIfNgnxstZRkiClm7FWlIjK\nWZgX9tRUWy5ITKzc8Xmd/ShldQKBgQDoIw8J0CjB82rf9Y1wfORN8aPX94ZOlVAq\nYy35YM4vg1GsoewAWdLMLXpsZCBEUak6LnDF9TDGHz44Re8bZ2nIxk9kvQprxmSp\nokisQKMyhgC7euzrXcL66kQARUpmbJsESC4ZnWrgfZZMytfTHxcItsQ6f89CAkjU\nojFun+hRkQKBgQCzJhekZ+8FoKhMB9p69O2PuEe11X1S8LntAo8JEKFb18feHIRD\n5NNWlt6PKpu1/bnVMivOvyJg0nlq9rOWHAFP1W3OCniB5ztHlIwa93LlF3hKkv7D\ntlqEQapJZxHQ3oQZPnQ0Tci2lXVXz7PqQd42IObTcqYPJYWrZqwuOS9dAQKBgQCH\nF1f6EvyVGk5Y9TKRguzt+zCpTzAG7VfQwxUPKmnzNo3CVBzee2d0UQcMqxwoBgng\nhQQ1/6GZurbf0rr6jK0AHYA4lNbKr5MHMRzvuVH/5gHpGPllY5RDpy9ZpPlOL+fq\njwLc/0IiUJO2Ltl40H/8HziE/rojpOazb4wq3744MQKBgQCMk4PJpSXc8lP5L8Cd\n+vBmaPsnPXKAac7h3P9HcekjttVdaMhh/KHtrLwgiAXPP9myrF5IJzQKhDdAzhcn\nTFEvUk9/jMo5ZHynl5yKe9fHDw26lMiU+u9LaJGFUlBqGTmPBjnEDZjdMtEuaq/W\nBV+W2Wo1Debq0mSNDlA3QhjPRg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@spectra-ce773.iam.gserviceaccount.com",
+  "client_id": "111234342839991081376",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40spectra-ce773.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
