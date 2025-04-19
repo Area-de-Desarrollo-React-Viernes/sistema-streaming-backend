@@ -1,8 +1,6 @@
 import morgan from 'morgan';
-import dotenv from 'dotenv';
-import express, { NextFunction, Request, Response } from 'express';
+import express from 'express';
 import { CONFIG } from './shared/config/config';
-import { HandlerException } from './shared/domain/HandlerException';
 import authRouter from './auth/routes/authRoutes';
 
 

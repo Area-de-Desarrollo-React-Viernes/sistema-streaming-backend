@@ -72,11 +72,12 @@ export class AuthController {
     }
     async createUserGoogle(req: Request, res: Response): Promise<void> {
         try{
-            await UserContainer.createUserGoogle.run(req.body.token);
+            const token = await UserContainer.createUserGoogle.run(req.body.token);
             res.status(201).json({
                 data:{
                     success: true,
-                    message: 'Se registro exitosamente con Google'
+                    message: 'Se registro exitosamente con Google',
+                    data: token
                 }
             });
         }catch(error: HandlerException | any){
