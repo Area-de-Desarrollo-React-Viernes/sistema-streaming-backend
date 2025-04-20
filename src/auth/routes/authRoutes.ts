@@ -1,5 +1,7 @@
 import { Router } from 'express';
 import { AuthController } from '../infrastructure/controller/AuthController';
+import { AuthorizationMiddleware } from '../../shared/infrastructure/middleware/AuthorizationMiddleware';
+import { saveBase64Image } from '../../shared/infrastructure/images/SaveImageBase64';
 
 const authRouter = Router();
 
@@ -26,4 +28,7 @@ authRouter.post('/register-google', (req, res) => {
 authRouter.post('/login-google', (req, res) => {
     authController.loginUserGoogle(req, res);
 })
+authRouter.put('/update-image', AuthorizationMiddleware, (req, res) => {
+    authController.updateImage(req, res);
+});
 export default authRouter;
