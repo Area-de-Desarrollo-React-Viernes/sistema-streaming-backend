@@ -2,6 +2,10 @@ import { Router } from 'express';
 import { AuthController } from '../infrastructure/controller/AuthController';
 import { AuthorizationMiddleware } from '../../shared/infrastructure/middleware/AuthorizationMiddleware';
 import { saveBase64Image } from '../../shared/infrastructure/images/SaveImageBase64';
+import { saveImageBase64Supabase } from '../../shared/infrastructure/images/SaveImageBase64Supabase';
+import { deleteImageUrlSupabase } from '../../shared/infrastructure/images/DeleteImageSupabase';
+import { saveImageFromUrl } from '../../shared/infrastructure/images/SaveImageUrl';
+
 
 const authRouter = Router();
 
@@ -30,5 +34,8 @@ authRouter.post('/login-google', (req, res) => {
 })
 authRouter.put('/update-image', AuthorizationMiddleware, (req, res) => {
     authController.updateImage(req, res);
+});
+authRouter.get('/user', AuthorizationMiddleware, (req, res) => {
+    authController.getUserById(req, res);
 });
 export default authRouter;

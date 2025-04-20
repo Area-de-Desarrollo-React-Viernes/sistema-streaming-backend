@@ -111,4 +111,18 @@ export class AuthController {
             responseException(res, error);
         }
     }
+    async getUserById(req: Request, res: Response): Promise<void> {
+        try{
+            const userId = (req as any).user;
+            const user = await UserContainer.getUserInfo.run(userId.sub);
+            res.status(201).json({
+                data: {
+                    success: true,
+                    user
+                }
+            });
+        }catch(error: HandlerException | any){
+            responseException(res, error);
+        }
+    }
 }

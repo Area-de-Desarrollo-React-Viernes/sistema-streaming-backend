@@ -10,6 +10,7 @@ import { UserAuthGoogleService } from "../../../auth/infrastructure/service/User
 import { LoginUserGoogleUseCase } from "../../../auth/application/use-case/LoginUserGoogleUseCase";
 import { UserImageService } from "../../../auth/infrastructure/service/UserImageService";
 import { UpdateImageUser } from "../../../auth/application/use-case/UpdateImageUser";
+import { GetInfoUserUseCase } from "../../../auth/application/use-case/GetInfoUserUseCase";
 
 const authRepository = new UserMysqlPersistence();
 const emailRepository = new UserSendEmailService();
@@ -24,5 +25,6 @@ export const UserContainer = {
     changePassword: new ChangeVerifiedPassword(authRepository),
     createUserGoogle: new CreateUserGoogleUseCase(authRepository, googleRepository, imageRepository),
     loginUserGoogle: new LoginUserGoogleUseCase(googleRepository),
-    updateUserImage: new UpdateImageUser(imageRepository)
+    updateUserImage: new UpdateImageUser(imageRepository),
+    getUserInfo: new GetInfoUserUseCase(authRepository, imageRepository)
 }

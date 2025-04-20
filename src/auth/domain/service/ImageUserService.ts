@@ -1,10 +1,8 @@
-import { User } from "../entities/User";
-import { UserImage } from "../entities/UserImage";
-import { UserEmail } from "../entities/value-objects/UserEmail";
+import { Image } from "../entities/Image";
 import { UserId } from "../entities/value-objects/UserId";
 
 export interface ImageUserService {
     createImageUser(url: string | null, userId: number): Promise<void>
     updateImageUser(imageBase64: string, userId: UserId): Promise<void>;
-    //findImageEmailUser(userEmail: UserEmail): Promise<UserImage>
+    findImageById(userId: UserId): Promise<Image | null>
 }
