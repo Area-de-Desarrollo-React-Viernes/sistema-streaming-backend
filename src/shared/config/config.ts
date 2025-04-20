@@ -22,4 +22,7 @@ export const CONFIG = {
     user_test: {
         token: process.env.ID_USER
     },
+    app: {
+        url: process.env.APP_URL
+    }
 }

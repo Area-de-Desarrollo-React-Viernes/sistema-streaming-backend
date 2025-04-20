@@ -9,6 +9,7 @@ import { CreateUserGoogleUseCase } from "../../../auth/application/use-case/Crea
 import { UserAuthGoogleService } from "../../../auth/infrastructure/service/UserAuthGoogleServie";
 import { LoginUserGoogleUseCase } from "../../../auth/application/use-case/LoginUserGoogleUseCase";
 import { UserImageService } from "../../../auth/infrastructure/service/UserImageService";
+import { UpdateImageUser } from "../../../auth/application/use-case/UpdateImageUser";
 
 const authRepository = new UserMysqlPersistence();
 const emailRepository = new UserSendEmailService();
@@ -22,5 +23,6 @@ export const UserContainer = {
     loginEmail: new LoginUserEmailUseCase(authRepository),
     changePassword: new ChangeVerifiedPassword(authRepository),
     createUserGoogle: new CreateUserGoogleUseCase(authRepository, googleRepository, imageRepository),
-    loginUserGoogle: new LoginUserGoogleUseCase(googleRepository)
+    loginUserGoogle: new LoginUserGoogleUseCase(googleRepository),
+    updateUserImage: new UpdateImageUser(imageRepository)
 }
