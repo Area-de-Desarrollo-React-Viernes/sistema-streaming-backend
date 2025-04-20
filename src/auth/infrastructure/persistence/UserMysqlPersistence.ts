@@ -14,6 +14,7 @@ import { UserUsername } from "../../domain/entities/value-objects/UserUsername";
 import { UserPassword } from "../../domain/entities/value-objects/UserPassword";
 import { AuthenticateRepository } from "../../domain/repository/AuthenticateRepository";
 import { UserCodeVerification } from "../../domain/entities/value-objects/UserCodeVerification";
+import { UserId } from '../../domain/entities/value-objects/UserId';
 export class UserMysqlPersistence implements AuthenticateRepository {
     async createUserRegisterEmail(user: User): Promise<User> {
         if (!user.password) {
@@ -85,5 +86,19 @@ export class UserMysqlPersistence implements AuthenticateRepository {
         await pool.execute('UPDATE users SET password = ?, code_verification = ? WHERE email = ?', [
             passwordHash, null, email.value
         ]);
+    }
+    async getById(userId: UserId): Promise<User | null> {
+        const [rows] = await pool.execute<UserEmailMysql[] & RowDataPacket[]>('SELECT * FROM users WHERE id = ?', [
+            userId.value
+        ]);
+        if(rows.length === 0){
+            return null;
+        }
+        const user = rows[0];
+        return new User(
+            user.id,
+            user.username,
+            user.email
+        )
     }
 } 
