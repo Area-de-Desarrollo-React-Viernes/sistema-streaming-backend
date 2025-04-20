@@ -42,15 +42,15 @@ export class UserMysqlPersistence implements AuthenticateRepository {
             user.email
         );
     }
-    async updateUsername(username: UserUsername, email: UserEmail): Promise<User> {
+    async updateUsername(username: UserUsername, userId: UserId): Promise<User> {
         if (!username) {
             throw new Error('No se encontro la contraseña');
         }
-        pool.execute('UPDATE users SET username = ? WHERE email = ?', [username.value, email.value]);
+        pool.execute('UPDATE users SET username = ? WHERE id = ?', [username.value, userId.value]);
         return new User(
             null,
             username.value,
-            email.value
+            null
         );
     }
     async updateCodeGenerate(codeVerification: UserCodeVerification, email: UserEmail): Promise<void> {

@@ -17,7 +17,7 @@ export class GetInfoUserUseCase {
         const userImage = await this.imageRepositiry.findImageById(new UserId(user.id as number));
         return new UserResponse(
             user.username,
-            user.email,
+            user.email as string,
             {
                 url: userImage?.url ?? null
             }

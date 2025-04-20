@@ -33,11 +33,12 @@ export class AuthController {
     }
     async changeUsername(req: Request, res: Response): Promise<void> {
         try{
-            await UserContainer.changeUsername.run(InstanceUserInfoRequest.instance(req));
+            const userId = (req as any).user.sub
+            const user = await UserContainer.changeUsername.run(req.body.username, userId);
             res.status(201).json({
                 data:{
                     success: true,
-                    message: 'Se envio el email con codigo de verificación'
+                    user
                 }
             });
         }catch(error: HandlerException | any){
