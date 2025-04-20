@@ -2,13 +2,14 @@ import path from "path";
 //import admin from 'firebase-admin';
 import { AuthGoogleService } from "../../domain/service/AuthGoogleService";
 import { pool } from "../../../shared/infrastructure/database/database.config";
-import { RowDataPacket } from "mysql2";
+import { ResultSetHeader, RowDataPacket } from "mysql2";
 import { UserExists } from "../../domain/exceptions/UserExists";
 import { admin } from "../../../shared/infrastructure/firebase/firebase-google";
 import jwt from "jsonwebtoken";
 import { CONFIG } from "../../../shared/config/config";
 import { UserNotFound } from "../../domain/exceptions/UserNotFound";
 import { UserGoogle } from "../../domain/entities/UserGoogle";
+import { User } from "../../domain/entities/User";
 
 export class UserAuthGoogleService implements AuthGoogleService {
     async findUserGoogle(token: string): Promise<UserGoogle | null> {
@@ -38,10 +39,10 @@ export class UserAuthGoogleService implements AuthGoogleService {
         if (rows.length !== 0) {
             throw new UserExists;
         }
-        await pool.execute('INSERT INTO users (username, email, provider_id, email_verified, login_type) values(?, ?, ?, ?, ?)', [
+        const [userId] = await pool.execute<ResultSetHeader>('INSERT INTO users (username, email, provider_id, email_verified, login_type) values(?, ?, ?, ?, ?)', [
             user.username, user.email, user.providerId, user.emailVerified, user.loginType
         ]);
-        const tokenJWT = jwt.sign({ sub: user.providerId }, CONFIG.jwt.secretJWT as string, {
+        const tokenJWT = jwt.sign({ sub: userId.insertId }, CONFIG.jwt.secretJWT as string, {
             expiresIn: '4h'
         });
         return tokenJWT;
@@ -53,10 +54,10 @@ export class UserAuthGoogleService implements AuthGoogleService {
         if (rows.length === 0) {
             throw new UserNotFound;
         }
-        const tokenJWT = jwt.sign({ sub: user.providerId }, CONFIG.jwt.secretJWT as string, {
+        const userId = rows[0];
+        const tokenJWT = jwt.sign({ sub: userId.id }, CONFIG.jwt.secretJWT as string, {
             expiresIn: '4h'
         });
         return tokenJWT;
     }
-
 }
