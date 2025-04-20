@@ -97,4 +97,18 @@ export class AuthController {
             responseException(res, error);
         }
     }
+    async updateImage(req: Request, res: Response): Promise<void> {
+        try{
+            const userId = (req as any).user;
+            await UserContainer.updateUserImage.run(req.body.image, userId.sub)
+            res.status(201).json({
+                data:{
+                    success: true,
+                    message: 'Se actualizo la imagen',
+                }
+            });
+        }catch(error: HandlerException | any){
+            responseException(res, error);
+        }
+    }
 }
