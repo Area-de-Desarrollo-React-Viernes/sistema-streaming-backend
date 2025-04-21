@@ -27,7 +27,6 @@ export class CreateUserRegisterEmailUseCase {
         await this.imageRepository.createImageUser(null, userCreate.id as number);
         return new UserInfoResponse(
             userCreate.username,
-            userCreate.email
         );
     }
 }
