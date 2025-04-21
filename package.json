@@ -5,8 +5,9 @@
   "main": "index.js",
   "module": "module",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/server.ts",
+    "start": "node src/server.ts",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "migrate": "ts-node src/shared/infrastructure/database/migration.ts",
     "prueba": "ts-node src/auth/prueba.ts"

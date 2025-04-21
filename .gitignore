@@ -1,3 +1,4 @@
 node_modules
 .env
 spectra.json
+dist
