@@ -1,7 +1,7 @@
 import * as admin from 'firebase-admin';
 import path from 'path';
 
-const serviceAccount = path.resolve(__dirname, '../../../../spectra.json');
+const serviceAccount = path.resolve('/etc/secrets', 'spectra.json');
 
 if (!admin.apps.length) {
     admin.initializeApp({
