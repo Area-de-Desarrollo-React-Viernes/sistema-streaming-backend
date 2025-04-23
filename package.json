@@ -10,7 +10,8 @@
     "start": "ts-node src/server.ts",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "migrate": "ts-node src/shared/infrastructure/database/migration.ts",
-    "seeder": "ts-node src/seeders/SeederDatabase.ts"
+    "seeder": "ts-node src/seeders/SeederDatabase.ts",
+    "production": "node dist/server.js"
   },
   "author": "luis",
   "license": "ISC",
