@@ -11,5 +11,22 @@ export const CONFIG = {
         user: process.env.DB_USER,
         password: process.env.DB_PASSWORD,
         name: process.env.DB_NAME
+    },
+    email: {
+        email: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_TOKEN
+    },
+    jwt: {
+        secretJWT: process.env.SECRET_JWT
+    },
+    user_test: {
+        token: process.env.ID_USER
+    },
+    app: {
+        url: process.env.APP_URL
+    },
+    supabase: {
+        url: process.env.SB_URL,
+        key: process.env.SB_KEY
     }
 }
