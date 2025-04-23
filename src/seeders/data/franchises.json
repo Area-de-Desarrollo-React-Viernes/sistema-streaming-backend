@@ -1,0 +1,452 @@
+[
+    {
+        "id": 1,
+        "title": "The boys",
+        "description": "The Boys está ambientada en un universo en el que los individuos superpoderosos son reconocidos como héroes por el público en general y trabajan para la poderosa corporación Vought International, que los comercializa y monetiza. Fuera de sus personajes heroicos, la mayoría son arrogantes, egoístas y corruptos.",
+        "url": "https://i.pinimg.com/474x/fc/4f/00/fc4f003bb617c49b9d0d99396c5fd4e2.jpg",
+        "gener_id": 1,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 2,
+        "title": "Brooklyn Nine-Nine",
+        "description": "Jake Peralta, un inmaduro pero talentoso detective de la Policía de Nueva York, en el precinto 99 de Brooklyn, entra en constante conflicto con su nuevo oficial al mando, el serio y duro capitán Ray Holt.",
+        "url": "https://www.ecartelera.com/carteles-series/100/189/007_m.jpg",
+        "gener_id": 2,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 3,
+        "title": "Breaking Bad",
+        "description": "Un profesor de química de un instituto diagnosticado con cáncer terminal recurre a la elaboración y venta de metanfetamina para sacar adelante a su familia. Tras el fracaso de su primera venta, Walter y Jesse se ven obligados a deshacerse de dos cadáveres. Mientras, Skyler sospecha que su marido no trama nada bueno.",
+        "url": "https://images-cdn.ubuy.co.in/634e35c3802d917a630c6706-breaking-bad-tv-show-2008-2013-poster.jpg",
+        "gener_id": 3,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 4,
+        "title": "Stranger Things",
+        "description": "Después de la extraña desaparición de un niño, un pueblo se encuentra ante un misterio que revela experimentos secretos, fuerzas sobrenaturales y a una niña muy especial.",
+        "url": "https://i5.walmartimages.com/asr/b38602c7-de1e-4afc-a5cb-d8623b9b3190.e35fd1cac0a8a64745857c6a8e873547.jpeg",
+        "gener_id": 4,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 5,
+        "title": "American Horror Story",
+        "description": "American Horror Story gira en torno a los Harmon, una familia de tres que se mudó de Boston a Los Ángeles para reconciliarse con la angustia del pasado. De los productores ejecutivos Ryan Murphy y Brad Falchuk (Nip Tuck) y Dante Di Loreto (Temple Grandin).",
+        "url": "https://img.aullidos.com/imagenes/varios/ah-stories-rubber.JPG",
+        "gener_id": 5,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 6,
+        "title": "outlander",
+        "description": "Este cuento épico, una adaptación de la popular saga de novelas de amor y fantasía de Diana Gabaldon, narra el viaje al pasado de una enfermera militar de la II Guerra Mundial.",
+        "url": "https://m.media-amazon.com/images/I/91ojjhty0XL._AC_UF894,1000_QL80_.jpg",
+        "gener_id": 6,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 7,
+        "title": "Game of Thrones",
+        "description": "En un mundo fantástico y en un contexto medieval varias familias, relativas a la nobleza, se disputan el poder para dominar el territorio ficticio de Poniente (Westeros) y tomar el control de los Siete Reinos desde el Trono de Hierro, lugar donde el rey ejerce el poder.",
+        "url": "https://m.media-amazon.com/images/I/61W-KI4mR6L._AC_UF894,1000_QL80_.jpg",
+        "gener_id": 7,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 8,
+        "title": "Grey's Anatomy",
+        "description": "El muy intenso drama médico, acompaña a Meredith Grey y al equipo de doctores del Hospital Grey Sloan, que enfrentan a diario decisiones de vida o muerte. Buscan consuelo entre ellos, y, a veces, más que una amistad. Juntos descubrirán que ni la medicina ni las relaciones pueden catalogarse fácilmente.",
+        "url": "https://i5.walmartimages.com/seo/Grey-s-Anatomy-Season-12-One-Sheet-Wall-Poster-14-725-x-22-375-Framed_85e43a24-3684-4ce9-83d0-50033d73f828.b15650b35d987f6eb60c80801da14248.jpeg",
+        "gener_id": 8,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 9,
+        "title": "Rick and Morty",
+        "description": "Rick and Morty: Este programa enseña a respetar a los mayores, aún si se trata de un alcohólico peligroso, que vive una realidad paralela y que es tu propio abuelo.",
+        "url": "https://i5.walmartimages.com/asr/84844328-8ead-496a-bf81-a343cec2afea_1.b6a5657005804f4b9aedd0d21c9d6f88.jpeg",
+        "gener_id": 9,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 10,
+        "title": "Cosmos",
+        "description": "Una aventura de trece partes a través del universo del espacio y del tiempo presentada por el renombrado astrofísico Neil deGrasse Tyson, que explorará la búsqueda heroica de la humanidad por el conocimiento de las leyes de la ciencia.",
+        "url": "https://m.media-amazon.com/images/M/MV5BYTRlMzk0NzctNTI3Ni00N2E2LWJiNGMtMDdlNjk1YWNmMzkyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "gener_id": 10,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 11,
+        "title": "The las of us",
+        "description": "Joel y Ellie, una pareja conectada a través de la dureza del mundo en el que viven, se ven obligados a soportar circunstancias brutales y asesinos despiadados en un viaje por la América posterior a una pandemia.",
+        "url": "https://m.media-amazon.com/images/M/MV5BYWI3ODJlMzktY2U5NC00ZjdlLWE1MGItNWQxZDk3NWNjN2RhXkEyXkFqcGc@._V1_.jpg",
+        "gener_id": 4,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 12,
+        "title": "Glee",
+        "description": "En Glee, el profesor de español de la secundaria Will Schuester (Matthew Morrison) renueva su pasión por la música creando un coro de inadaptados con talento. ",
+        "url": "https://i.pinimg.com/474x/45/1e/d5/451ed51330edd0ad3eceb2bdef914560.jpg",
+        "gener_id": 12,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 13,
+        "title": "Ted Lasso",
+        "description": "Ted Lasso, un entrenador de fútbol americano universitario, que es contratado para dirigir un equipo de fútbol profesional inglés, a pesar de no tener experiencia en ese deporte. La serie explora temas como el liderazgo, la amistad, la salud mental y la importancia de creer en uno mismo. ",
+        "url": "https://xonomax.com/cdn/shop/files/600768.jpg?v=1733286417&width=416",
+        "gener_id": 13,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 14,
+        "title": "Peppa Pig",
+        "description": "La serie infantil de animación británica PEPPA PIG gira en torno a una familia de cerdos antropomórficos: Peppa, que parece tener unos 4 años, su hermano pequeño George, que apenas habla, Mamá Pig y Papá Pig, que viven juntos en una casa en un pueblo cerca de otros miembros de la extensa familia de cerdos.",
+        "url": "https://m.media-amazon.com/images/I/61k17jc7lxL._AC_UF894,1000_QL80_.jpg",
+        "gener_id": 14,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 15,
+        "title": "The X-Files",
+        "description": "Agentes especiales del FBI son asignados a un grupo separado que está a cargo de investigaciones únicas de casos inexplicables conocidos como 'Los Expedientes Secretos X' o 'Los Archivos Secretos X'. ",
+        "url": "https://m.media-amazon.com/images/M/MV5BMTYwN2VlYWMtMzM4My00OWY4LWE4ZGQtMWExNWM1ZTEwMTMxXkEyXkFqcGc@._V1_.jpg",
+        "gener_id": 15,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 16,
+        "title": "Jack Ryan",
+        "description": " Jack Ryan, basada en los personajes de Tom Clancy, cuenta la historia de Jack Ryan, un analista de la CIA que se ve envuelto en una peligrosa investigación de transacciones bancarias sospechosas que lo lleva a perseguir a un terrorista que planea un ataque masivo en Estados Unidos. ",
+        "url": "https://m.media-amazon.com/images/I/71VfoktKwhL._AC_UF894,1000_QL80_.jpg",
+        "gener_id": 1,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 17,
+        "title": "The Office",
+        "description": "Esta exitosa comedia narra las locuras de unos oficinistas descontentos, liderados por el incompetente jefe Michael Scott en la empresa de venta de papel Dunder Mifflin.",
+        "url": "https://ih1.redbubble.net/image.1407331942.4547/flat,750x,075,f-pad,750x1000,f8f8f8.u2.webp",
+        "gener_id": 2,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 18,
+        "title": "The Crown",
+        "description": "Esta dramatización, inspirada en hechos reales, relata la vida de la reina Isabel II y los sucesos políticos y personales que han definido su reinado.",
+        "url": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/H43UMC5LYVGNVMUTRYCHLSRHTY.jpg",
+        "gener_id": 3,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 19,
+        "title": "The 100",
+        "description": "Un siglo después de que la Tierra fuera devastada por un holocausto nuclear, cien habitantes de una estación espacial vuelven al planeta para determinar si es habitable.",
+        "url": "https://i.pinimg.com/736x/2f/57/7e/2f577e1e7b50dba295e061b24e62af85.jpg",
+        "gener_id": 4,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 20,
+        "title": "Bates Motel",
+        "description": "a serie sigue la vida de Norman Bates y su madre Norma antes de los eventos de la película, mostrando cómo se desarrolla la psique de Norman y la naturaleza de su relación con su madre.",
+        "url": "https://m.media-amazon.com/images/I/71u8bxoUxYL._AC_UF894,1000_QL80_.jpg",
+        "gener_id": 5,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 21,
+        "title": "Bridgerton",
+        "description": "Mientras las debutantes anhelan ser los diamantes más relucientes del baile, una discreta gema con una doble vida descubre su propio brillo entre secretos y sorpresas.",
+        "url": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/TECPXU247ZF6VA5FLRRQDANCZM.jpg",
+        "gener_id": 6,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 22,
+        "title": "The Witcher",
+        "description": "Geralt de Rivia, el legendario brujo cazador de monstruos, gravita inexorablemente hacia su destino en un mundo de tormentos y humanas traiciones.",
+        "url": "https://img.aullidos.com/imagenes/varios/the-witcher-season-2-poster.JPG",
+        "gener_id": 7,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 23,
+        "title": "House M.D.",
+        "description": "Dr. Gregory House, un médico brillante pero misántropo que dirige la unidad de diagnóstico del Hospital Universitario Princeton-Plainsboro. La serie se centra en los casos complejos y poco comunes que llegan a la unidad, los cuales el Dr. House y su equipo de médicos investigan y diagnostican. ",
+        "url": "https://image2.commarts.com/images1/3/9/2/1/129355_0_992_MzA5NTkyNjc5LTIwMzk1MjEwNjE.jpg",
+        "gener_id": 8,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 24,
+        "title": "BoJack Horseman",
+        "description": "Un caballo antropomórfico que fue estrella de una sitcom en los años 90 y ahora lucha contra la depresión, el alcoholismo y la soledad en un mundo de animales y humanos que conviven.",
+        "url": "https://m.media-amazon.com/images/M/MV5BZmMwMDlkNTEtMmQzZS00ODQ0LWJlZmItOTgwYWMwZGM4MzFiXkEyXkFqcGc@._V1_.jpg",
+        "gener_id": 9,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 25,
+        "title": "Chef's table ",
+        "description": "Documental de Netflix que explora la vida y el trabajo de algunos de los chefs más innovadores y talentosos del mundo. Cada episodio se centra en un chef específico, mostrando su historia, sus procesos creativos y su visión de la alta cocina. ",
+        "url": "https://m.media-amazon.com/images/M/MV5BMjE3MDQ2OTYyN15BMl5BanBnXkFtZTgwNjQ0Nzg0NzM@._V1_.jpg",
+        "gener_id": 10,
+        "user_id": 1,
+        "format_type_id": 2
+    },
+    {
+        "id": 26,
+        "title": "Mad Max",
+        "description": "Tras la guerra termonuclear que ha convertido a la Tierra en un páramo, el antiguo policía Max Rockatansky, atormentado por los espíritus de aquellos a los que no pudo proteger, se ha convertido en un hombre con un solo instinto: sobrevivir.",
+        "url": "https://i.ebayimg.com/images/g/mA0AAOSwnM9k3Yvf/s-l1200.jpg",
+        "gener_id": 1,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 27,
+        "title": "Superbad",
+        "description": "Seth y Evan, dos estudiantes de secundaria que intentan conseguir alcohol para una fiesta de graduación con la esperanza de impresionar a dos chicas.",
+        "url": "https://m.media-amazon.com/images/S/pv-target-images/b587ba9137c8d80200eea9bc02fcfa15f290db20b7f35f0d5786f9510d01134a.jpg",
+        "gener_id": 2,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 28,
+        "title": "The Shawshank Redemption",
+        "description": "Andy Dufresne, un banquero condenado erróneamente por el asesinato de su esposa, que pasa dos décadas en la prisión de Shawshank. A través de la esperanza y la amistad, sobrevive y eventualmente escapa, encontrando finalmente la libertad y la redención.",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1SLLKSzi3U1WQ48lb6gdl4a5AbdZYPH4wsw&s",
+        "gener_id": 3,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 29,
+        "title": "Interstellar",
+        "description": "Un grupo de astronautas, liderados por el ex-ingeniero de la NASA Cooper, que se adentra en un agujero de gusano cerca de Saturno para buscar un nuevo planeta habitable. ",
+        "url": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "gener_id": 4,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 30,
+        "title": "El Conjuro",
+        "description": "La familia Perron, que se muda a una casa encantada en Rhode Island y es aterrorizada por una presencia demoníaca.",
+        "url": "https://mx.web.img3.acsta.net/pictures/19/03/20/19/26/1988298.jpg",
+        "gener_id": 5,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 31,
+        "title": "The Notebook",
+        "description": "Allie y Noah, un romance que comienza en el verano de los años 40 y se ve interrumpido por la guerra y las diferencias sociales.",
+        "url": "https://m.media-amazon.com/images/M/MV5BZjE0ZjgzMzYtMTAxYi00NGMzLThmZDktNzFlMzA2MWRmYWQ0XkEyXkFqcGc@._V1_.jpg",
+        "gener_id": 6,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 32,
+        "title": "El Señor de los Anillos",
+        "description": "El Señor Oscuro, y la amenaza que representa el Anillo Único. Para destruir este anillo, Frodo Bolsón, un humilde hobbit, emprende un peligroso viaje con la ayuda de una comunidad de diferentes razas.",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/el-sen-or-de-los-anillos-los-anillos-de-poder-66d6de11d8885.jpg",
+        "gener_id": 7,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 33,
+        "title": "Patch Adams",
+        "description": "El protagonista, después de una experiencia personal en un hospital psiquiátrico, decide convertirse en médico para ayudar a los demás de una manera diferente, utilizando el humor como una herramienta terapéutica.",
+        "url": "https://es.web.img3.acsta.net/r_1280_720/pictures/14/08/14/12/40/402566.jpg",
+        "gener_id": 8,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 34,
+        "title": "Toy Story",
+        "description": "Woody, un vaquero de juguete, y Buzz Lightyear, un nuevo juguete espacial, que rivalizan por el cariño de Andy, el niño dueño de ambos.",
+        "url": "https://i.pinimg.com/736x/a6/4f/06/a64f066a6857dcf03e7436cfcd42a8e3.jpg",
+        "gener_id": 9,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 35,
+        "title": "Blackfish",
+        "description": "Es un documental de 80 minutos que explora la vida de la orca Tilikum y el impacto del cautiverio en estas inteligentes y sensibles criaturas.",
+        "url": "https://m.media-amazon.com/images/M/MV5BNTkyNTkwMzkxMl5BMl5BanBnXkFtZTcwMzAwOTE2OQ@@._V1_FMjpg_UX1000_.jpg",
+        "gener_id": 10,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 36,
+        "title": "Forrest Gump",
+        "description": "Un hombre con discapacidad intelectual que, a través de su inocencia y bondad, se convierte en un personaje clave en varios momentos importantes de la historia de Estados Unidos entre 1950 y 1980.",
+        "url": "https://i.pinimg.com/736x/52/29/99/5229997934b5b5acfa512b32db0091fd.jpg",
+        "gener_id": 11,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 37,
+        "title": "La La Land",
+        "description": "Mia, una aspirante a actriz, y Sebastian, un pianista de jazz, quienes se enamoran en Los Ángeles mientras persiguen sus sueños. Sus caminos se cruzan y, a pesar de sus diferencias, se unen en una relación apasionada.",
+        "url": "https://i.pinimg.com/564x/b6/dd/b1/b6ddb142c3fd3db99f22d02263f51341.jpg",
+        "gener_id": 12,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 38,
+        "title": "Rush",
+        "description": "Narra la intensa rivalidad entre los pilotos de Fórmula 1 James Hunt y Niki Lauda durante la temporada de 1976.",
+        "url": "https://i.pinimg.com/736x/dc/6f/b0/dc6fb075cf054caf66fed24b3dfc6667.jpg",
+        "gener_id": 13,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 39,
+        "title": "Frozen",
+        "description": "Elsa, una princesa con poderes mágicos para crear hielo y nieve, y su hermana Anna, que se embarca en un viaje para encontrarla después de que Elsa, temiendo sus poderes, congela accidentalmente el reino de Arendelle y se esconde.",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkMoKpxHc_ZE0dGRIIXgUwcqZHcJJfB6iSmQ&s",
+        "gener_id": 14,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 40,
+        "title": "El Sexto Sentido",
+        "description": "Malcolm Crowe, un psicólogo infantil, que se ve involucrado en un incidente con un antiguo paciente que lo hiere y luego se suicida.",
+        "url": "https://image.tmdb.org/t/p/original/wcnLlfQ2USwvyYbd6XgtNEOQfMT.jpg",
+        "gener_id": 15,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 41,
+        "title": "Gladiator",
+        "description": "Máximo Décimo Meridio, un general romano traicionado por el hijo del emperador Cómodo. Tras ser reducido a la esclavitud y obligado a luchar como gladiador, Máximo busca vengar la muerte de su familia y restaurar el honor de Roma. ",
+        "url": "https://i.pinimg.com/736x/46/a3/39/46a339ce62f36d331d3484f6dff97630.jpg",
+        "gener_id": 1,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 42,
+        "title": "The Hangover",
+        "description": "Tres amigos que, después de una despedida de soltero descontrolada en Las Vegas, se despiertan sin recordar la noche anterior y sin su amigo soltero, Doug.",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT796B_C-cnD_NfoV_UYhaxig2eGfJRZObj9w&s",
+        "gener_id": 2,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 43,
+        "title": "Manchester by the Sea",
+        "description": "Lee Chandler, un hombre solitario que se ve obligado a regresar a su pueblo natal después de la muerte de su hermano y a hacerse cargo de su sobrino Patrick. ",
+        "url": "https://m.media-amazon.com/images/M/MV5BMTYxMjk0NDg4Ml5BMl5BanBnXkFtZTgwODcyNjA5OTE@._V1_.jpg",
+        "gener_id": 3,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 44,
+        "title": "Duna",
+        "description": "La familia Atreides, dirigida por el duque Leto, es asignada a gobernar Arrakis, lo que los convierte en blanco de la astuta y cruel Casa Harkonnen, liderada por el Barón Harkonnen.",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1b6bNmmzjmU0tl0GQ-ZGUvD5md-2mGeU5GA&s",
+        "gener_id": 4,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 45,
+        "title": "Hereditary",
+        "description": "La familia Graham, quienes sufren eventos paranormales después de la muerte de la abuela y matriarca, Ellen.",
+        "url": "https://i.ebayimg.com/images/g/JRkAAOSwai9kQJIc/s-l1200.jpg",
+        "gener_id": 5,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 46,
+        "title": "Titanic",
+        "description": "Historia de amor entre Jack Dawson y Rose DeWitt Bukater, dos jóvenes que se conocen a bordo del RMS Titanic en su viaje inaugural a Nueva York.",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPVJ-KbGgbvWyb6r7BIbq7BvFoybUQjdEhHg&s",
+        "gener_id": 6,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 47,
+        "title": "Narnia",
+        "description": "Cuatro hermanos que, a través de un armario mágico, entran al mundo de Narnia. En Narnia, la Bruja Blanca ha congelado el país en un invierno eterno, y los hermanos, junto con el león Aslan, deben luchar para liberar a Narnia de la bruja. ",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCva9gVJDeFKC_azsX4v3c-HW44yknBpUh_w&s",
+        "gener_id": 7,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 48,
+        "title": "The Good Doctor",
+        "description": "Los desafíos que Shaun enfrenta al lidiar con el escepticismo de sus colegas y el público, así como los dilemas bioéticos que se presentan en el mundo de la medicina. ",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfYkae37UpcRflY2YY_nAfp8hFobanhFhuJQ&s",
+        "gener_id": 8,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 49,
+        "title": "Soul",
+        "description": "Joe Gardner, un profesor de música que sueña con ser un músico de jazz profesional. Tras un accidente, su alma se separa de su cuerpo y se encuentra en un lugar donde las almas se preparan para la vida en la Tierra.",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0-Ju1m4Aba_15Ks5UhT_WQsAbF-YLO7Gbyg&s",
+        "gener_id": 9,
+        "user_id": 1,
+        "format_type_id": 1
+    },
+    {
+        "id": 50,
+        "title": "Amy",
+        "description": "La vida de Winehouse y su lucha contra el abuso de sustancias, tanto antes como después de que su carrera floreciera, y que finalmente causó su muerte. ",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoMepxjS0tv-gitz4C999k5kfi-1rhs_0A6w&s",
+        "gener_id": 10,
+        "user_id": 1,
+        "format_type_id": 1
+    }
+]
