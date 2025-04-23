@@ -7,11 +7,11 @@
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/server.ts",
+    "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "migrate": "ts-node src/shared/infrastructure/database/migration.ts",
     "seeder": "ts-node src/seeders/SeederDatabase.ts",
-    "production": "node dist/server.js"
+    "production": "npm run build && npm start"
   },
   "author": "luis",
   "license": "ISC",
