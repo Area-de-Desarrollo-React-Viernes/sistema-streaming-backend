@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Plan Basico",
+        "price": 14.99,
+        "description": [
+            "Catálogo básico: Acceso al catálogo estándar de películas y series",
+            "1 dispositivo: Ve en un dispositivo a la vez",
+            "Calidad HD: Disfruta del contenido en calidad HD",
+            "Sin anuncios: Experiencia sin interrupciones"
+        ]
+    },
+    {
+        "name": "PLan Premium",
+        "price": 29.99,
+        "description": [
+            "Catálogo completo: Acceso a todo el contenido exclusivo",
+            "5 dispositivos: Ve en hasta 5 dispositivos simultáneamente",
+            "Calidad Ultra HD y 4K: La mejor experiencia visual",
+            "Sin anuncios: Experiencia sin interrupciones",
+            "Descargas: Descarga contenido para ver sin conexión"
+        ]
+    }
+]

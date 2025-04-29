@@ -1,0 +1,325 @@
+[
+    {
+        "id": 1,
+        "title": "The Boys - Temporada 1",
+        "release_Date": "26/07/2019",
+        "exclusiveness": true,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/AD0qUhZpbfc?si=WrEa8Sjy0g9rt5MV",
+        "image_url": "https://www.ecartelera.com/carteles-series/1300/1381/001.jpg",
+        "franchise_id": 1,
+        "season_number": 1
+    },
+    {
+        "id": 2,
+        "title": "The Boys - Temporada 2",
+        "release_Date": "04/09/2020",
+        "exclusiveness": true,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/pQQ3ZkeJ9U0?si=5UNmjhnVZHqnNiat",
+        "image_url": "https://images.justwatch.com/poster/315996750/s718/temporada-2.jpg",
+        "franchise_id": 1,
+        "season_number": 2
+    },
+    {
+        "id": 3,
+        "title": "The Boys - Temporada 3",
+        "release_Date": "03/06/2022",
+        "exclusiveness": true,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/elTgqUW-NYE?si=5VPMXhqZo9VhStcP",
+        "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/CKKRZQEJAFEJLIP4SCYEUDD5OM.jpg",
+        "franchise_id": 1,
+        "season_number": 3
+    },
+    {
+        "id": 4,
+        "title": "The Boys - Temporada 4",
+        "release_Date": "13/06/2024",
+        "exclusiveness": true,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/RzDdLdM59kw?si=_GiKetpWEa_IXp48",
+        "image_url": "https://cdn.forbes.com.mx/2023/11/The-Boys-temporada-4-819x1024.webp",
+        "franchise_id": 1,
+        "season_number": 4
+    },
+
+    {
+        "id": 5,
+        "title": "Brooklyn Nine-Nine - Temporada 1",
+        "release_Date": "17/09/2013",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/sEOuJ4z5aTc?si=YNd_V9lM5OnWPOQ0",
+        "image_url": "https://m.media-amazon.com/images/M/MV5BNzBiODQxZTUtNjc0MC00Yzc1LThmYTMtN2YwYTU3NjgxMmI4XkEyXkFqcGc@._V1_.jpg",
+        "franchise_id": 2,
+        "season_number": 1
+    },
+    {
+        "id": 6,
+        "title": "Brooklyn Nine-Nine - Temporada 2",
+        "release_Date": "28/09/2014",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/c-OkjDqpp-g?si=HmnNq_aG34nNkOG6",
+        "image_url": "https://m.media-amazon.com/images/M/MV5BNzBiODQxZTUtNjc0MC00Yzc1LThmYTMtN2YwYTU3NjgxMmI4XkEyXkFqcGc@._V1_.jpg",
+        "franchise_id": 2,
+        "season_number": 2
+    },
+    {
+        "id": 7,
+        "title": "Brooklyn Nine-Nine - Temporada 3",
+        "release_Date": "27/09/2015",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/WQbckNDJvsE?si=fIYLSEvouAfa9E9B",
+        "image_url": "https://m.media-amazon.com/images/M/MV5BNzBiODQxZTUtNjc0MC00Yzc1LThmYTMtN2YwYTU3NjgxMmI4XkEyXkFqcGc@._V1_.jpg",
+        "franchise_id": 2,
+        "season_number": 3
+    },
+    {
+        "id": 8,
+        "title": "Brooklyn Nine-Nine - Temporada 4",
+        "release_Date": "20/09/2016",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/qPYNUFSkhS4?si=YeK8qLr824mzDdJ0",
+        "image_url": "https://m.media-amazon.com/images/M/MV5BNzBiODQxZTUtNjc0MC00Yzc1LThmYTMtN2YwYTU3NjgxMmI4XkEyXkFqcGc@._V1_.jpg",
+        "franchise_id": 2,
+        "season_number": 4
+    },
+    {
+        "id": 9,
+        "title": "Brooklyn Nine-Nine - Temporada 5",
+        "release_Date": "26/09/2017",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/bvV2gnV05BU?si=yhBh5z9kDUqT1jM6",
+        "image_url": "https://m.media-amazon.com/images/M/MV5BNzBiODQxZTUtNjc0MC00Yzc1LThmYTMtN2YwYTU3NjgxMmI4XkEyXkFqcGc@._V1_.jpg",
+        "franchise_id": 2,
+        "season_number": 5
+    },
+    {
+        "id": 10,
+        "title": "Brooklyn Nine-Nine - Temporada 6",
+        "release_Date": "10/01/2019",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/8j8XB5xojVk?si=iFp8VOig_Jgc3n2P",
+        "image_url": "https://m.media-amazon.com/images/M/MV5BNzBiODQxZTUtNjc0MC00Yzc1LThmYTMtN2YwYTU3NjgxMmI4XkEyXkFqcGc@._V1_.jpg",
+        "franchise_id": 2,
+        "season_number": 6
+    },
+    {
+        "id": 11,
+        "title": "Brooklyn Nine-Nine - Temporada 7",
+        "release_Date": "06/02/2020",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/zTL7c50cz2E?si=G8rN7qxGd4Dcr4SN",
+        "image_url": "https://m.media-amazon.com/images/M/MV5BNzBiODQxZTUtNjc0MC00Yzc1LThmYTMtN2YwYTU3NjgxMmI4XkEyXkFqcGc@._V1_.jpg",
+        "franchise_id": 2,
+        "season_number": 7
+    },
+    {
+        "id": 12,
+        "title": "Brooklyn Nine-Nine - Temporada 8",
+        "release_Date": "12/08/2021",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/Zbdtowum840?si=uVgwkA7jrS9-ilXF",
+        "image_url": "https://m.media-amazon.com/images/M/MV5BNzBiODQxZTUtNjc0MC00Yzc1LThmYTMtN2YwYTU3NjgxMmI4XkEyXkFqcGc@._V1_.jpg",
+        "franchise_id": 2,
+        "season_number": 8
+    },
+
+    {
+        "id": 13,
+        "title": "Breaking Bad - Temporada 1",
+        "release_Date": "20/01/2008",
+        "exclusiveness": true,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/HhesaQXLuRY?si=In2MLKS0RVoeJ_D2",
+        "image_url": "https://image.tmdb.org/t/p/original/ggFHVNu6YYI5L9pCfOacjizRGt.jpg",
+        "franchise_id": 3,
+        "season_number": 1
+    },
+    {
+        "id": 14,
+        "title": "Breaking Bad - Temporada 2",
+        "release_Date": "08/03/2009",
+        "exclusiveness": true,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/I-8914DuyhY?si=In2MLKS0RVoeJ_D2",
+        "image_url": "https://es.web.img2.acsta.net/r_1280_720/pictures/18/07/23/11/26/1597342.jpg",
+        "franchise_id": 3,
+        "season_number": 2
+    },
+    {
+        "id": 15,
+        "title": "Breaking Bad - Temporada 3",
+        "release_Date": "21/03/2010",
+        "exclusiveness": true,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/ZK2IQ3LbLYk?si=In2MLKS0RVoeJ_D2",
+        "image_url": "https://image.tmdb.org/t/p/original/1xbJYlFsIhWavK45y7DmJICBS4r.jpg",
+        "franchise_id": 3,
+        "season_number": 3
+    },
+    {
+        "id": 16,
+        "title": "Breaking Bad - Temporada 4",
+        "release_Date": "17/07/2011",
+        "exclusiveness": true,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/WcUmzPcQEJo?si=In2MLKS0RVoeJ_D2",
+        "image_url": "https://image.tmdb.org/t/p/original/ggFHVNu6YYI5L9pCfOacjizRGt.jpg",
+        "franchise_id": 3,
+        "season_number": 4
+    },
+    {
+        "id": 17,
+        "title": "Breaking Bad - Temporada 5",
+        "release_Date": "15/07/2012",
+        "exclusiveness": true,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/_Z-PTJhf0Po?si=In2MLKS0RVoeJ_D2",
+        "image_url": "https://i.pinimg.com/736x/d3/7d/05/d37d05f76d2a44c0c746b64f24720a59.jpg",
+        "franchise_id": 3,
+        "season_number": 5
+    },
+
+    {
+        "id": 18,
+        "title": "Stranger Things - Temporada 1",
+        "release_Date": "15/07/2016",
+        "exclusiveness": true,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/b9EkMc79ZSU",
+        "image_url": "https://m.media-amazon.com/images/I/71M7PiUlN9L._AC_SL1050_.jpg",
+        "franchise_id": 4,
+        "season_number": 1
+    },
+    {
+        "id": 19,
+        "title": "Stranger Things - Temporada 2",
+        "release_Date": "27/10/2017",
+        "exclusiveness": true,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/R1ZXOOLMJ8s",
+        "image_url": "https://m.media-amazon.com/images/I/81QDU13hAAL._AC_SL1200_.jpg",
+        "franchise_id": 4,
+        "season_number": 2
+    },
+    {
+        "id": 20,
+        "title": "Stranger Things - Temporada 3",
+        "release_Date": "04/07/2019",
+        "exclusiveness": true,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/6Am4v0C_z8c?si=mEtJzvnsRaKPJbOg",
+        "image_url": "https://m.media-amazon.com/images/I/91SJyEdJPiS._AC_SL1500_.jpg",
+        "franchise_id": 4,
+        "season_number": 3
+    },
+    {
+        "id": 21,
+        "title": "Stranger Things - Temporada 4",
+        "release_Date": "27/05/2022",
+        "exclusiveness": true,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/sBEvEcpnG7k",
+        "image_url": "https://images-cdn.ubuy.co.in/67f7608ee7940e8a570b5659-posters-millie-bobby-brown-stranger.jpg",
+        "franchise_id": 4,
+        "season_number": 4
+    },
+
+    {
+        "id": 22,
+        "title": "American Horror Story - Temporada 1: Murder House",
+        "release_Date": "05/10/2011",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/reP8VFF3KHU?si=xWn7fOGA69Bt6_J1",
+        "image_url": "https://es.web.img3.acsta.net/pictures/18/10/30/17/07/0996605.jpg",
+        "franchise_id": 5,
+        "season_number": 1
+    },
+    {
+        "id": 23,
+        "title": "American Horror Story - Temporada 2: Asylum",
+        "release_Date": "17/10/2012",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/syiJDMKu3wI?si=K2XezIeqBZc_lH6N",
+        "image_url": "https://es.web.img2.acsta.net/r_1280_720/pictures/22/09/21/10/08/5981086.jpg",
+        "franchise_id": 5,
+        "season_number": 2
+    },
+    {
+        "id": 24,
+        "title": "American Horror Story - Temporada 3: Coven",
+        "release_Date": "09/10/2013",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/ItmmrskxpiI?si=HmPe7CPBfsmvAWuo",
+        "image_url": "https://uvn-brightspot.s3.amazonaws.com/assets/vixes/btg/series.batanga.com/files/American-Horror-Story-poster-oficial-de-la-tercera-temporada-2.jpg",
+        "franchise_id": 5,
+        "season_number": 3
+    },
+    {
+        "id": 25,
+        "title": "American Horror Story - Temporada 4: Freak Show",
+        "release_Date": "08/10/2014",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/VPTwNuc5b3c?si=hcXovQrUQK-f6Ddk",
+        "image_url": "https://i.pinimg.com/474x/73/bd/52/73bd52976e306406b5118ebe39c220fb.jpg",
+        "franchise_id": 5,
+        "season_number": 4
+    },
+    {
+        "id": 26,
+        "title": "American Horror Story - Temporada 5: Hotel",
+        "release_Date": "07/10/2015",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/Rp_04uEY4Mc?si=jDYC-s7Qy98JVUT2",
+        "image_url": "https://es.web.img3.acsta.net/pictures/15/09/23/12/52/019052.jpg",
+        "franchise_id": 5,
+        "season_number": 5
+    },
+    {
+        "id": 27,
+        "title": "American Horror Story - Temporada 6: Roanoke",
+        "release_Date": "14/09/2016",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/v06W08QopG8?si=CvlsaZPyZ_Mo3FWg",
+        "image_url": "https://pics.filmaffinity.com/american_horror_story_my_roanoke_nightmare-478441834-mmed.jpg",
+        "franchise_id": 5,
+        "season_number": 6
+    },
+    {
+        "id": 28,
+        "title": "American Horror Story - Temporada 7: Cult",
+        "release_Date": "05/09/2017",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/b9uMWKPdnPA?si=J7QV7OFy7ggPP7sA",
+        "image_url": "https://m.media-amazon.com/images/I/71QFVazxw1L._AC_UF894,1000_QL80_.jpg",
+        "franchise_id": 5,
+        "season_number": 7
+    },
+    {
+        "id": 29,
+        "title": "American Horror Story - Temporada 8: Apocalypse",
+        "release_Date": "12/09/2018",
+        "exclusiveness": false,
+        "views": 1000,
+        "url_yotube": "https://www.youtube.com/embed/k6T6C4xR7bA?si=1ySyUFMvStOE5uj1",
+        "image_url": "https://hips.hearstapps.com/hmg-prod/images/american-horror-story-apocalypse-poster-1533711391.jpg",
+        "franchise_id": 5,
+        "season_number": 8
+    }
+]
