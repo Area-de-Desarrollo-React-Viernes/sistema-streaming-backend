@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from "path"
 import { pool } from '../shared/infrastructure/database/database.config';
 import { randomInt } from 'crypto';
-import { saveImageFromUrl } from '../shared/infrastructure/images/SaveImageUrl';
+import { saveImageFromUrlSupabase } from '../shared/infrastructure/images/SaveImageUrlSupabase';
 
 interface ContentJson {
     id: number,
@@ -51,7 +51,7 @@ export const ContentInsert = async () => {
         data.map(async (i) => [
             i.id,
             'contents',
-            await saveImageFromUrl(i.image_url, 'contends')
+            await saveImageFromUrlSupabase(i.image_url, 'contends')
         ])
     );
 
