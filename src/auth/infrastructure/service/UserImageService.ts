@@ -13,9 +13,9 @@ export class UserImageService implements ImageUserService {
         ]);
     }
     async updateImageUser(imageBase64: string, userId: UserId): Promise<void> {
-        const imageUrl = saveImageBase64Supabase(imageBase64, 'users');
+        const imageUrl = await saveImageBase64Supabase(imageBase64, 'users');
         await pool.execute('UPDATE images SET url = ? WHERE imageble_id = ? AND imageble_type = ?', [
-            imageUrl, userId.value, 'users'
+            imageUrl.url, userId.value, 'users'
         ]);
     }
     async findImageById(userId: UserId): Promise<Image | null> {
