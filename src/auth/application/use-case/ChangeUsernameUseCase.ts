@@ -10,7 +10,6 @@ export class ChangeUsernameUseCase {
         private authRepository: AuthenticateRepository
     ) { }
     async run(username: string, userId: number): Promise<UserInfoResponse> {
-        console.log(userId);
         const userValidate = await this.authRepository.getById(new UserId(userId));
         if (!userValidate) {
             throw new UserNotFound;
