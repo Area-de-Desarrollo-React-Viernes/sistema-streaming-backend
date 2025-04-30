@@ -15,4 +15,15 @@ export class ContentUserController {
             responseException(res, error);
         }
     }
+    async randomPopular(req: Request, res: Response): Promise<void> {
+        try{
+            const data = await ContentUserContainer.randomPopular.run();
+            res.status(200).json({
+                success: true,
+                data
+            });
+        }catch(error: HandlerException | any) {
+            responseException(res, error);
+        }
+    }
 }
