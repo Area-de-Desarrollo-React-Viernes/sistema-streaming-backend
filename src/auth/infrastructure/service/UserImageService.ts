@@ -4,6 +4,7 @@ import { saveBase64Image } from "../../../shared/infrastructure/images/SaveImage
 import { Image } from "../../domain/entities/Image";
 import { UserId } from "../../domain/entities/value-objects/UserId";
 import { ImageUserService } from "../../domain/service/ImageUserService";
+import { saveImageBase64Supabase } from "../../../shared/infrastructure/images/SaveImageBase64Supabase";
 
 export class UserImageService implements ImageUserService {
     async createImageUser(url: string | null, userId: number): Promise<void> {
@@ -12,7 +13,7 @@ export class UserImageService implements ImageUserService {
         ]);
     }
     async updateImageUser(imageBase64: string, userId: UserId): Promise<void> {
-        const imageUrl = saveBase64Image(imageBase64, 'users', 'user');
+        const imageUrl = saveImageBase64Supabase(imageBase64, 'users');
         await pool.execute('UPDATE images SET url = ? WHERE imageble_id = ? AND imageble_type = ?', [
             imageUrl, userId.value, 'users'
         ]);
