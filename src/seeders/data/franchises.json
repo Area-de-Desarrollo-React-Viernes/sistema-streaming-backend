@@ -217,10 +217,10 @@
     },
     {
         "id": 25,
-        "title": "Chef's table ",
-        "description": "Documental de Netflix que explora la vida y el trabajo de algunos de los chefs más innovadores y talentosos del mundo. Cada episodio se centra en un chef específico, mostrando su historia, sus procesos creativos y su visión de la alta cocina. ",
-        "url": "https://m.media-amazon.com/images/M/MV5BMjE3MDQ2OTYyN15BMl5BanBnXkFtZTgwNjQ0Nzg0NzM@._V1_.jpg",
-        "gener_id": 10,
+        "title": "Squid Games",
+        "description": "Serie surcoreana de suspenso y drama en la que cientos de personas con dificultades económicas aceptan una misteriosa invitación para competir en juegos infantiles por un premio millonario. Sin embargo, lo que parece un simple juego se convierte en una lucha mortal por la supervivencia.",
+        "url": "https://images-cdn.ubuy.co.in/64271944a0278c4d900691f8-cinemaflix-squid-game-poster-tv-series.jpg",
+        "gener_id": 3,
         "user_id": 1,
         "format_type_id": 2
     },

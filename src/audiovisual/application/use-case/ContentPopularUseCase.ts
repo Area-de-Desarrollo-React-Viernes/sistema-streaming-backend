@@ -10,18 +10,27 @@ export class ContentPopularUseCase {
     ) { }
     async run(): Promise<ContentPopularResponse[]> {
         const content = await this.audiovisualUserRepository.getPopularContent();
-        const image = await this.imageService.getPopularContentImage();
-        
-        return content.map((c, index) => {
-            const imageUrl = image[index]?.url || '';
+
+        const ids = content.map((c) => c.id);
+        const images = await this.imageService.getPopularContentImage(ids);
+
+        const imageMap = new Map<number, string>();
+        images.forEach(img => {
+            if (img.imagebleId) {
+                imageMap.set(img.imagebleId, img.url);
+            }
+        });
+
+        return content.map((c) => {
+            const imageUrl = imageMap.get(c.id) || '';
             return new ContentPopularResponse(
-                    c.id,
-                    c.title,
-                    c.releaseDate,
-                    c.exclusiveness as boolean,
-                    c.views as number,
-                    new ImageContentResponse(imageUrl)
-            )
+                c.id,
+                c.title,
+                c.releaseDate,
+                c.exclusiveness as boolean,
+                c.views as number,
+                new ImageContentResponse(imageUrl)
+            );
         });
     }
 }

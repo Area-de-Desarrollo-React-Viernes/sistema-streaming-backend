@@ -46,7 +46,7 @@ export class UserMysqlPersistence implements AuthenticateRepository {
         if (!username) {
             throw new Error('No se encontro la contraseña');
         }
-        pool.execute('UPDATE users SET username = ? WHERE id = ?', [username.value, userId.value]);
+        await pool.execute('UPDATE users SET username = ? WHERE id = ?', [username.value, userId.value]);
         return new User(
             null,
             username.value,

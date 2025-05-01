@@ -1,5 +1,5 @@
 import { Image } from "../entities/Image";
 
 export interface ImageContentService {
-    getPopularContentImage(): Promise<Image[]>;
+    getPopularContentImage(contentIds: number[]): Promise<Image[]>;
 }
