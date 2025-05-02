@@ -11,5 +11,7 @@ contentUserRouter.get('/popular', (req, res) => {
 contentUserRouter.get('/random-popular', (req, res) => {
     contentUserController.randomPopular(req, res);
 });
-
+contentUserRouter.get('', (req, res) => {
+    contentUserController.filterContentPaginate(req, res);
+});
 export default contentUserRouter;

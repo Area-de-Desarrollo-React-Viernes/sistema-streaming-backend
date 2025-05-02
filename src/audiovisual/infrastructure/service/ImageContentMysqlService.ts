@@ -6,8 +6,6 @@ import { url } from "node:inspector";
 
 export class ImageContentMysqlService implements ImageContentService {
     async getPopularContentImage(contentIds: number[]): Promise<Image[]> {
-        contentIds.push(20);
-        console.log(contentIds);
         const placeholders = contentIds.map(() => '?').join(', ');
         const [rows] = await pool.execute<RowDataPacket[]>(
             `
@@ -19,7 +17,6 @@ export class ImageContentMysqlService implements ImageContentService {
         `,
             contentIds
         );
-        console.log(rows.length);
         return rows.map((row) => {
             return new Image(
                 row.imageble_id,
