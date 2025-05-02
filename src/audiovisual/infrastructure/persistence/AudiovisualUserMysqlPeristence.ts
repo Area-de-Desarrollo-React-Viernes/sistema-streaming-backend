@@ -51,4 +51,61 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
             row.description
         ));
     }
+    async getContentsFilter(gener: string | null, format: string | null, limit: number, page: number): Promise<{ 
+        data: AudiovisualContent[]; 
+        total: number; 
+        nextPage: number | null; 
+        prevPage: number | null; 
+        totalPage: number; }> {
+        const offset = (page-1) * limit;
+        let query = `
+            SELECT SQL_CALC_FOUND_ROWS
+            c.id,
+            c.title,
+            c.release_date,
+            c.exclusiveness,
+            c.views
+            FROM audiovisual_contents AS c
+            INNER JOIN franchises AS f ON f.id = c.franchise_id
+            INNER JOIN format_types AS ft ON ft.id = f.format_type_id
+            INNER JOIN geners AS g ON g.id = f.gener_id
+            WHERE 1=1
+        `;
+
+        const params = [];
+        if(gener) {
+            query += ' AND g.name = ?';
+            params.push(gener);
+        }
+
+        if(format) {
+            query += ' AND ft.name = ?';
+            params.push(format);
+        }
+
+        query += ' ORDER BY c.release_date DESC LIMIT ?, ?';
+        params.push(offset, limit);
+
+        const [contents] = await pool.execute<RowDataPacket[]>(query, params);
+        const [[total]] = await pool.execute<RowDataPacket[]>('SELECT FOUND_ROWS() as total');
+
+        const totalCount = total.total;
+        const totalPage = Math.ceil(totalCount / limit);
+
+        return {
+            data: contents.map((c) => {
+                return new AudiovisualContent(
+                    c.id,
+                    c.title,
+                    c.release_date?.toISOString?.().split('T')[0] || '',
+                    c.exclusiveness,
+                    c.views
+                );
+            }),
+            total: totalCount,
+            nextPage: page < totalPage ? page + 1 : null,
+            prevPage: page > 1 ? page - 1 : null,
+            totalPage: totalPage
+        }
+    }
 }
