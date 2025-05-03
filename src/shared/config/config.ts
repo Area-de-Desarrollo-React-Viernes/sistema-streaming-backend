@@ -22,4 +22,11 @@ export const CONFIG = {
     user_test: {
         token: process.env.ID_USER
     },
+    app: {
+        url: process.env.APP_URL
+    },
+    supabase: {
+        url: process.env.SB_URL,
+        key: process.env.SB_KEY
+    }
 }

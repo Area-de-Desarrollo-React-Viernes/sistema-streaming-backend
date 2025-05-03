@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { format } from 'date-fns';
-import { RowDataPacket } from "mysql2";
+import { ResultSetHeader, RowDataPacket } from "mysql2";
 import { User } from "../../domain/entities/User";
 import { CONFIG } from '../../../shared/config/config';
 import { UserInfoMysql } from "./types/UserInfoMysql";
@@ -14,39 +14,43 @@ import { UserUsername } from "../../domain/entities/value-objects/UserUsername";
 import { UserPassword } from "../../domain/entities/value-objects/UserPassword";
 import { AuthenticateRepository } from "../../domain/repository/AuthenticateRepository";
 import { UserCodeVerification } from "../../domain/entities/value-objects/UserCodeVerification";
+import { UserId } from '../../domain/entities/value-objects/UserId';
 export class UserMysqlPersistence implements AuthenticateRepository {
     async createUserRegisterEmail(user: User): Promise<User> {
         if (!user.password) {
             throw new Error('No se encontro la contraseña');
         }
         const passwordHash = await bcrypt.hash(user.password, 10);
-        pool.execute('INSERT INTO users (username, email, password, login_type) VALUES(?, ?, ?, ?)', [
+        const [userId] = await pool.execute<ResultSetHeader>('INSERT INTO users (username, email, password, login_type) VALUES(?, ?, ?, ?)', [
             user.username, user.email, passwordHash, 'email'
         ]);
         return new User(
+            userId.insertId,
             user.username,
             user.email
         );
     }
     async getByEmail(email: UserEmail): Promise<User | null> {
-        const [rows] = await pool.execute<UserEmailMysql[] & RowDataPacket[]>('SELECT username, email, password FROM users WHERE email = ?', [email.value]);
+        const [rows] = await pool.execute<UserEmailMysql[] & RowDataPacket[]>('SELECT id, username, email, password FROM users WHERE email = ?', [email.value]);
         if (rows.length === 0) {
             return null;
         }
         const user = rows[0];
         return new User(
+            user.id,
             user.username,
             user.email
         );
     }
-    async updateUsername(username: UserUsername, email: UserEmail): Promise<User> {
+    async updateUsername(username: UserUsername, userId: UserId): Promise<User> {
         if (!username) {
             throw new Error('No se encontro la contraseña');
         }
-        pool.execute('UPDATE users SET username = ? WHERE email = ?', [username.value, email.value]);
+        await pool.execute('UPDATE users SET username = ? WHERE id = ?', [username.value, userId.value]);
         return new User(
+            null,
             username.value,
-            email.value
+            null
         );
     }
     async updateCodeGenerate(codeVerification: UserCodeVerification, email: UserEmail): Promise<void> {
@@ -66,7 +70,7 @@ export class UserMysqlPersistence implements AuthenticateRepository {
         if(!bcrypt.compareSync(password.value, user.password)){
             throw new CredentialInvalid;
         }
-        const token = jwt.sign({id: user.id}, CONFIG.jwt.secretJWT as string, {
+        const token = jwt.sign({sub: user.id}, CONFIG.jwt.secretJWT as string, {
             expiresIn: '4h'
         });
         return token;
@@ -82,5 +86,19 @@ export class UserMysqlPersistence implements AuthenticateRepository {
         await pool.execute('UPDATE users SET password = ?, code_verification = ? WHERE email = ?', [
             passwordHash, null, email.value
         ]);
+    }
+    async getById(userId: UserId): Promise<User | null> {
+        const [rows] = await pool.execute<UserEmailMysql[] & RowDataPacket[]>('SELECT * FROM users WHERE id = ?', [
+            userId.value
+        ]);
+        if(rows.length === 0){
+            return null;
+        }
+        const user = rows[0];
+        return new User(
+            user.id,
+            user.username,
+            user.email
+        )
     }
 } 

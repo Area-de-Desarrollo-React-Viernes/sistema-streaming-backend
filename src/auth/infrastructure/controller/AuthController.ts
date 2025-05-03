@@ -33,11 +33,12 @@ export class AuthController {
     }
     async changeUsername(req: Request, res: Response): Promise<void> {
         try{
-            await UserContainer.changeUsername.run(InstanceUserInfoRequest.instance(req));
+            const userId = (req as any).user.sub
+            const user = await UserContainer.changeUsername.run(req.body.username, userId);
             res.status(201).json({
                 data:{
                     success: true,
-                    message: 'Se envio el email con codigo de verificación'
+                    user
                 }
             });
         }catch(error: HandlerException | any){
@@ -50,7 +51,7 @@ export class AuthController {
             res.status(201).json({
                 data: {
                     success: true,
-                    message: token
+                    token: token
                 }
             });
         }catch(error: HandlerException | any){
@@ -77,7 +78,48 @@ export class AuthController {
                 data:{
                     success: true,
                     message: 'Se registro exitosamente con Google',
-                    data: token
+                    token: token
+                }
+            });
+        }catch(error: HandlerException | any){
+            responseException(res, error);
+        }
+    }
+    async loginUserGoogle(req: Request, res: Response): Promise<void> {
+        try{
+            const token = await UserContainer.loginUserGoogle.run(req.body.token);
+            res.status(200).json({
+                data: {
+                    success: true,
+                    token: token
+                }
+            });
+        }catch(error: HandlerException | any){
+            responseException(res, error);
+        }
+    }
+    async updateImage(req: Request, res: Response): Promise<void> {
+        try{
+            const userId = (req as any).user;
+            await UserContainer.updateUserImage.run(req.body.image, userId.sub)
+            res.status(201).json({
+                data:{
+                    success: true,
+                    message: 'Se actualizo la imagen',
+                }
+            });
+        }catch(error: HandlerException | any){
+            responseException(res, error);
+        }
+    }
+    async getUserById(req: Request, res: Response): Promise<void> {
+        try{
+            const userId = (req as any).user;
+            const user = await UserContainer.getUserInfo.run(userId.sub);
+            res.status(201).json({
+                data: {
+                    success: true,
+                    user
                 }
             });
         }catch(error: HandlerException | any){

@@ -2,23 +2,23 @@ import { pool } from './database.config'
 
 async function migrationRunDatabase() {
 
-    await pool.execute('DROP TABLE IF EXISTS related_titles');
+
+    await pool.execute('SET FOREIGN_KEY_CHECKS = 0');
 
     await pool.execute('DROP TABLE IF EXISTS favorites');
     await pool.execute('DROP TABLE IF EXISTS comments');
-
-    await pool.execute('DROP TABLE IF EXISTS audiovisual_contents');
-
-    await pool.execute('DROP TABLE IF EXISTS format_types');
-    await pool.execute('DROP TABLE IF EXISTS geners');
-
     await pool.execute('DROP TABLE IF EXISTS payments');
     await pool.execute('DROP TABLE IF EXISTS subscriptions');
-
-    await pool.execute('DROP TABLE IF EXISTS users');
+    await pool.execute('DROP TABLE IF EXISTS audiovisual_contents');
+    await pool.execute('DROP TABLE IF EXISTS franchises');
     await pool.execute('DROP TABLE IF EXISTS streaming_services');
     await pool.execute('DROP TABLE IF EXISTS subscription_statuses');
+    await pool.execute('DROP TABLE IF EXISTS geners');
+    await pool.execute('DROP TABLE IF EXISTS format_types');
+    await pool.execute('DROP TABLE IF EXISTS users');
     await pool.execute('DROP TABLE IF EXISTS images');
+
+    await pool.execute('SET FOREIGN_KEY_CHECKS = 1');
 
     await pool.execute(`CREATE TABLE users(
         id int PRIMARY KEY AUTO_INCREMENT,
@@ -51,7 +51,7 @@ async function migrationRunDatabase() {
         );`);
     console.log('se creo subscription_statuses');
 
-    await pool.execute(`CREATE TABLE streaming_Services(
+    await pool.execute(`CREATE TABLE streaming_services(
         id int PRIMARY KEY AUTO_INCREMENT,
         name VARCHAR(256),
         description TEXT,
@@ -59,28 +59,30 @@ async function migrationRunDatabase() {
         );`);
     console.log('se creo streaming_Services');
 
+    await pool.execute(`CREATE TABLE franchises(
+        id INT PRIMARY KEY AUTO_INCREMENT,
+        title VARCHAR(256),
+        description TEXT,
+        user_id INT,
+        format_type_id INT,
+        gener_id INT,
+        FOREIGN KEY(format_type_id) REFERENCES format_types(id) ON DELETE CASCADE,
+        FOREIGN KEY(gener_id) REFERENCES geners(id),
+        FOREIGN KEY(user_id) REFERENCES users(id)
+        );`);
+    console.log('se creo franchises');
+
     await pool.execute(`CREATE TABLE audiovisual_contents(
         id int PRIMARY KEY AUTO_INCREMENT,
         title VARCHAR(256),
-        description VARCHAR(256),
         release_date DATE,
         exclusiveness BOOLEAN,
         views INT,
         url_youtube VARCHAR(256),
-        format_type_id INT,
-        gener_id INT,
-        FOREIGN KEY(format_type_id) REFERENCES format_types(id) ON DELETE CASCADE,
-        FOREIGN KEY(gener_id) REFERENCES geners(id)
+        franchise_id INT,
+        FOREIGN KEY(franchise_id) REFERENCES franchises(id)
         );`);
     console.log('se creo audiovisual_contents');
-
-    await pool.execute(`CREATE TABLE related_titles(
-        aduvisual_content_id INT,
-        related_content_id INT,
-        FOREIGN KEY(aduvisual_content_id) REFERENCES audiovisual_contents(id),
-        FOREIGN KEY(related_content_id) REFERENCES audiovisual_contents(id)
-        );`);
-    console.log('se creo related_titles');
 
     await pool.execute(`CREATE TABLE subscriptions(
         id int PRIMARY KEY AUTO_INCREMENT,

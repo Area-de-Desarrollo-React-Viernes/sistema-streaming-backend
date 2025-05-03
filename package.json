@@ -5,16 +5,20 @@
   "main": "index.js",
   "module": "module",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/server.ts",
+    "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "migrate": "ts-node src/shared/infrastructure/database/migration.ts",
-    "prueba": "ts-node src/auth/prueba.ts"
+    "seeder": "ts-node src/seeders/SeederDatabase.ts",
+    "production": "npm run build && npm start"
   },
   "author": "luis",
   "license": "ISC",
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
     "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
     "date-fns": "^4.1.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
@@ -26,6 +30,7 @@
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/jest": "^29.5.14",
     "@types/jsonwebtoken": "^9.0.9",

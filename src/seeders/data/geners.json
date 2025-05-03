@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Acción"
+    },
+    {
+        "id": 2,
+        "name": "Comedia"
+    },
+    {
+        "id": 3,
+        "name": "Drama"
+    },
+    {
+        "id": 4,
+        "name": "Ciencia Ficción"
+    },
+    {
+        "id": 5,
+        "name": "Terror"
+    },
+    {
+        "id": 6,
+        "name": "Romance"
+    },
+    {
+        "id": 7,
+        "name": "Fantasia"
+    },
+    {
+        "id": 8,
+        "name": "Medica"
+    },
+    {
+        "id": 9,
+        "name": "Animación"
+    },
+    {
+        "id": 10,
+        "name": "Documental"
+    },
+    {
+        "id": 11,
+        "name": "Recuentos de la vida"
+    },
+    {
+        "id": 12,
+        "name": "Musical"
+    },
+    {
+        "id": 13,
+        "name": "Deportes"
+    },
+    {
+        "id": 14,
+        "name": "Infantil"
+    },
+    {
+        "id": 15,
+        "name": "sobrenatural"
+    }
+]
