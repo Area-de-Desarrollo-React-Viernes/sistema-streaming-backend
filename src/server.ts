@@ -5,6 +5,8 @@ import authRouter from './auth/routes/authRoutes';
 import path from 'path';
 import cors from 'cors';
 import contentUserRouter from './audiovisual/routes/ContentUserRouter';
+import generRouter from './audiovisual/routes/GenerRouter';
+import formatRouter from './audiovisual/routes/FormatRouter';
 
 const app = express();
 
@@ -21,6 +23,10 @@ app.use(morgan('dev'));
 app.use('/api/auths', authRouter);
 
 app.use('/api/contents', contentUserRouter);
+
+app.use('/api/geners', generRouter);
+
+app.use('/api/formats', formatRouter);
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
