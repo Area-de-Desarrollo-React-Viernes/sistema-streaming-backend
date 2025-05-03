@@ -1,3 +1,4 @@
+import { RegistersNotFound } from "../../domain/exceptions/RegistersNotFound";
 import { AudiovisualUserRepository } from "../../domain/repository/AudiovisualUserRepository";
 import { ImageContentService } from "../../domain/service/ImageContentService";
 import { ContentPopularResponse } from "../dto/response/ContentPopularResponse";
@@ -20,7 +21,9 @@ export class ContentFilterPaginateUseCase {
             prevPage,
             totalPage
         } = await this.contenUserRepository.getContentsFilter(gener, format, limit, page);
-
+        if(data.length === 0){
+            throw new RegistersNotFound;
+        }
         const contentIds = data.map((c) => c.id);
         const images = await this.imageContentService.getPopularContentImage(contentIds);
 
