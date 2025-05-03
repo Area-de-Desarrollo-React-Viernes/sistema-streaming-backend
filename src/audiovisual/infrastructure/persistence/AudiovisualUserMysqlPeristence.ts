@@ -3,6 +3,7 @@ import { pool } from "../../../shared/infrastructure/database/database.config";
 import { AudiovisualContent } from "../../domain/entities/AudiovisualContent";
 import { AudiovisualUserRepository } from "../../domain/repository/AudiovisualUserRepository";
 import { AudiovisualVideo } from "../../domain/entities/AudivisualVideo";
+import { ContentId } from "../../domain/entities/ValueObjects/ContendId";
 
 export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepository {
     async getPopularContent(): Promise<AudiovisualContent[]> {
@@ -107,5 +108,32 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
             prevPage: page > 1 ? page - 1 : null,
             totalPage: totalPage
         }
+    }
+    async getContentId(id: ContentId): Promise<AudiovisualContent | null> {
+        const [row] = await pool.execute<RowDataPacket[]>(`
+                SELECT 
+                a.id,
+                a.title,
+                a.release_date,
+                a.exclusiveness,
+                a.views,
+                a.url_youtube,
+                a.franchise_id
+                FROM audiovisual_contents AS a
+                WHERE a.id = ?
+            `, [id.value]);
+        if(row.length === 0){
+            return null;
+        }
+        const content = row[0];
+        return new AudiovisualContent(
+            content.id,
+            content.title,
+            content.release_date?.toISOString?.().split('T')[0] || '',
+            content.exclusiveness,
+            content.views,
+            content.url_youtube,
+            content.franchise_id
+        );
     }
 }
