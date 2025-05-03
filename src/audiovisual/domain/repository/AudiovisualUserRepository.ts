@@ -1,5 +1,6 @@
 import { AudiovisualContent } from "../entities/AudiovisualContent";
 import { AudiovisualVideo } from "../entities/AudivisualVideo";
+import { ContentId } from "../entities/ValueObjects/ContendId";
 
 
 export interface AudiovisualUserRepository {
@@ -12,4 +13,5 @@ export interface AudiovisualUserRepository {
         prevPage: number | null,
         totalPage: number
     }>;
+    getContentId(id: ContentId): Promise<AudiovisualContent | null>;
 }
