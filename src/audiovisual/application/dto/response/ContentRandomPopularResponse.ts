@@ -1,3 +1,5 @@
+import { ImageContentResponse } from "./ImageContentResponse";
+
 export class ContentRandomPopularResponse {
     constructor(
         public readonly id: number,
@@ -5,5 +7,6 @@ export class ContentRandomPopularResponse {
         public readonly realease_date: string,
         public readonly description: string,
         public readonly video: string,
+        public readonly image: ImageContentResponse
     ) {}
 }
