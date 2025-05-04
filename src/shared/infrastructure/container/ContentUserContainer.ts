@@ -13,7 +13,7 @@ const generService = new GenerMysqlService();
 
 export const ContentUserContainer = {
     popularContent: new ContentPopularUseCase(contentUserRepository, imageUserService),
-    randomPopular: new ContentRandomPopularUseCase(contentUserRepository),
+    randomPopular: new ContentRandomPopularUseCase(contentUserRepository, imageUserService),
     filterContentPaginate: new ContentFilterPaginateUseCase(contentUserRepository, imageUserService),
     getContent: new GetContentUseCase(contentUserRepository, imageUserService, generService)
 }
