@@ -4,6 +4,7 @@ import { Image } from "../../domain/entities/Image";
 import { ImageContentService } from "../../domain/service/ImageContentService";
 import { url } from "node:inspector";
 import { ContentId } from "../../domain/entities/ValueObjects/ContendId";
+import { FranchiseId } from "../../domain/entities/ValueObjects/FranchiseId";
 
 export class ImageContentMysqlService implements ImageContentService {
     async getPopularContentImage(contentIds: number[]): Promise<Image[]> {
@@ -34,9 +35,29 @@ export class ImageContentMysqlService implements ImageContentService {
                 WHERE imageble_id = ?
                 AND imageble_type = 'contents'
             `, [
-                idContent.value
-            ]);
-        if(row.length === 0) {
+            idContent.value
+        ]);
+        if (row.length === 0) {
+            return null;
+        }
+        const image = row[0];
+        return new Image(
+            image.imageble_id,
+            image.url
+        );
+    }
+    async getFranchiseImage(idFranchise: FranchiseId): Promise<Image | null> {
+        const [row] = await pool.execute<RowDataPacket[]>(`
+            SELECT
+            imageble_id,
+            url
+            FROM images
+            WHERE imageble_id = ?
+            AND imageble_type = 'franchicies'
+        `, [
+            idFranchise.value
+        ]);
+        if (row.length === 0) {
             return null;
         }
         const image = row[0];

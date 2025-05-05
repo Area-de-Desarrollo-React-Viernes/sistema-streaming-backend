@@ -1,6 +1,7 @@
 import { AudiovisualContent } from "../entities/AudiovisualContent";
 import { AudiovisualVideo } from "../entities/AudivisualVideo";
 import { ContentId } from "../entities/ValueObjects/ContendId";
+import { FranchiseId } from "../entities/ValueObjects/FranchiseId";
 
 
 export interface AudiovisualUserRepository {
@@ -14,4 +15,5 @@ export interface AudiovisualUserRepository {
         totalPage: number
     }>;
     getContentId(id: ContentId): Promise<AudiovisualContent | null>;
+    getContentFranchiseId(franchiseId: FranchiseId): Promise<AudiovisualContent[]>;
 }

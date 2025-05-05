@@ -3,6 +3,7 @@ import path from "path";
 import { pool } from '../shared/infrastructure/database/database.config';
 import { ResultSetHeader } from 'mysql2';
 import { saveImageFromUrl } from '../shared/infrastructure/images/SaveImageUrl';
+import { saveImageFromUrlSupabase } from '../shared/infrastructure/images/SaveImageUrlSupabase';
 
 interface FranchiciesJson {
     id: number,
@@ -29,7 +30,7 @@ export const franchiciesInsert = async () => {
         data.map(async (i) => [
         i.id, 
         'franchicies', 
-        await saveImageFromUrl(i.url, 'franchise', 'fran')
+        await saveImageFromUrlSupabase(i.url, 'franchise')
     ]));
 
     const query = 'INSERT INTO franchises (title, description, user_id, format_type_id, gener_id) VALUES ?';

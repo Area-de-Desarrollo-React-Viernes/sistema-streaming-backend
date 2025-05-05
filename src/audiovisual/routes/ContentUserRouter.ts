@@ -17,4 +17,7 @@ contentUserRouter.get('', (req, res) => {
 contentUserRouter.get('/:id', (req, res) => {
     contentUserController.getContent(req, res);
 });
+contentUserRouter.get('/franchise/:id', (req, res) => {
+    contentUserController.getFranchise(req, res);
+});
 export default contentUserRouter;
