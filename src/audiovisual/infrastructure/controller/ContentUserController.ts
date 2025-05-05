@@ -53,4 +53,16 @@ export class ContentUserController {
             responseException(res, error);
         }
     }
+    async getFranchise(req: Request, res: Response): Promise<void> {
+        try{
+            const id = parseInt(req.params.id);
+            const data = await ContentUserContainer.getFranchiseConetents.run(id);
+            res.status(200).json({
+                success: true,
+                data
+            });
+        }catch(error: HandlerException | any) {
+            responseException(res, error);
+        }
+    }
 }

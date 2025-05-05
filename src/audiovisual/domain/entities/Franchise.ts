@@ -3,7 +3,7 @@ export class Franchise {
         public id: number,
         public title: string,
         public description: string,
-        public formatTypeId: number | null = null,
         public generId: number | null = null,
+        public formatTypeId: number | null = null,
     ) { }
 }

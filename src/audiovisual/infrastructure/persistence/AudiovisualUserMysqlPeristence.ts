@@ -4,6 +4,7 @@ import { AudiovisualContent } from "../../domain/entities/AudiovisualContent";
 import { AudiovisualUserRepository } from "../../domain/repository/AudiovisualUserRepository";
 import { AudiovisualVideo } from "../../domain/entities/AudivisualVideo";
 import { ContentId } from "../../domain/entities/ValueObjects/ContendId";
+import { FranchiseId } from "../../domain/entities/ValueObjects/FranchiseId";
 
 export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepository {
     async getPopularContent(): Promise<AudiovisualContent[]> {
@@ -52,13 +53,14 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
             row.description
         ));
     }
-    async getContentsFilter(gener: string | null, format: string | null, limit: number, page: number): Promise<{ 
-        data: AudiovisualContent[]; 
-        total: number; 
-        nextPage: number | null; 
-        prevPage: number | null; 
-        totalPage: number; }> {
-        const offset = (page-1) * limit;
+    async getContentsFilter(gener: string | null, format: string | null, limit: number, page: number): Promise<{
+        data: AudiovisualContent[];
+        total: number;
+        nextPage: number | null;
+        prevPage: number | null;
+        totalPage: number;
+    }> {
+        const offset = (page - 1) * limit;
         let query = `
             SELECT SQL_CALC_FOUND_ROWS
             c.id,
@@ -74,12 +76,12 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
         `;
 
         const params = [];
-        if(gener) {
+        if (gener) {
             query += ' AND g.name = ?';
             params.push(gener);
         }
 
-        if(format) {
+        if (format) {
             query += ' AND ft.name = ?';
             params.push(format);
         }
@@ -122,7 +124,7 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
                 FROM audiovisual_contents AS a
                 WHERE a.id = ?
             `, [id.value]);
-        if(row.length === 0){
+        if (row.length === 0) {
             return null;
         }
         const content = row[0];
@@ -135,5 +137,25 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
             content.url_youtube,
             content.franchise_id
         );
+    }
+    async getContentFranchiseId(franchiseId: FranchiseId): Promise<AudiovisualContent[]> {
+        const [rows] = await pool.execute<RowDataPacket[]>(`
+                SELECT
+                *
+                FROM
+                audiovisual_contents 
+                WHERE franchise_id = ?
+            `, [franchiseId.value]);
+        return rows.map((content) => {
+            return new AudiovisualContent(
+                content.id,
+                content.title,
+                content.release_date?.toISOString?.().split('T')[0] || '',
+                content.exclusiveness,
+                content.views,
+                content.url_youtube,
+                content.franchise_id
+            );
+        });
     }
 }
