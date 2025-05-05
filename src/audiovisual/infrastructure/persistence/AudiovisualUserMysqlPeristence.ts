@@ -14,7 +14,8 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
                 title,
                 release_date,
                 exclusiveness,
-                views
+                views,
+                franchise_id
                 FROM audiovisual_contents
                 ORDER BY views DESC
                 LIMIT 10
@@ -24,7 +25,9 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
             row.title,
             row.release_date?.toISOString?.().split('T')[0] || '',
             !!row.exclusiveness,
-            row.views
+            row.views,
+            null,
+            row.franchise_id
         ));
     }
     async getHeroRandomVideo(): Promise<AudiovisualVideo[]> {
@@ -34,6 +37,7 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
                     c.title,
                     c.release_date,
                     c.url_youtube,
+                    c.franchise_id,
                     f.description
                 FROM(
                     SELECT *, RAND() as rand_val
@@ -50,7 +54,8 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
             row.title,
             row.release_date?.toISOString?.().split('T')[0] || '',
             row.url_youtube,
-            row.description
+            row.description,
+            row.franchise_id
         ));
     }
     async getContentsFilter(gener: string | null, format: string | null, limit: number, page: number): Promise<{
@@ -67,7 +72,8 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
             c.title,
             c.release_date,
             c.exclusiveness,
-            c.views
+            c.views,
+            c.franchise_id
             FROM audiovisual_contents AS c
             INNER JOIN franchises AS f ON f.id = c.franchise_id
             INNER JOIN format_types AS ft ON ft.id = f.format_type_id
@@ -102,7 +108,9 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
                     c.title,
                     c.release_date?.toISOString?.().split('T')[0] || '',
                     c.exclusiveness,
-                    c.views
+                    c.views,
+                    null,
+                    c.franchise_id
                 );
             }),
             total: totalCount,

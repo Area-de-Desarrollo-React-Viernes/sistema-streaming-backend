@@ -29,6 +29,7 @@ export class ContentPopularUseCase {
                 c.releaseDate,
                 c.exclusiveness as boolean,
                 c.views as number,
+                c.franchiseId as number,
                 new ImageContentResponse(imageUrl)
             );
         });
