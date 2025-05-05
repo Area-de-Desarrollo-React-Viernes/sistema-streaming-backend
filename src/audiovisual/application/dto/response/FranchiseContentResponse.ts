@@ -1,3 +1,4 @@
+import { ContentFranchiseResponse } from "./ContentFranchiseResponse";
 import { ContentPopularResponse } from "./ContentPopularResponse";
 import { ImageContentResponse } from "./ImageContentResponse";
 
@@ -8,6 +9,6 @@ export class FranchiseContentResponse {
         public readonly description: string,
         public readonly generId: number,
         public readonly image: ImageContentResponse,
-        public readonly contents: ContentPopularResponse[]
+        public readonly contents: ContentFranchiseResponse[]
     ) {}
 }

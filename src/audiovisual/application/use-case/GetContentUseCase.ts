@@ -27,7 +27,7 @@ export class GetContentUseCase {
             content.exclusiveness as boolean,
             content.views as number,
             content.urlYoutube as string,
-            content.franchiseId as string,
+            content.franchiseId as number,
             new GenerResponse(
                 gener?.id as number,
                 gener?.name as string

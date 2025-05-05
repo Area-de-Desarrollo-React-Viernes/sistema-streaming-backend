@@ -4,6 +4,7 @@ export class AudiovisualVideo {
         public title: string,
         public releaseDate: string,
         public urlYoutube: string,
-        public description: string
+        public description: string,
+        public franchisId: number
     ) {}
 }
