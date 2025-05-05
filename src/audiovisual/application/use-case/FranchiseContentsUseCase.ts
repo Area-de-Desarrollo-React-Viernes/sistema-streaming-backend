@@ -2,6 +2,7 @@ import { FranchiseId } from "../../domain/entities/ValueObjects/FranchiseId";
 import { AudiovisualUserRepository } from "../../domain/repository/AudiovisualUserRepository";
 import { FranchiseService } from "../../domain/service/FranchiseService";
 import { ImageContentService } from "../../domain/service/ImageContentService";
+import { ContentFranchiseResponse } from "../dto/response/ContentFranchiseResponse";
 import { ContentPopularResponse } from "../dto/response/ContentPopularResponse";
 import { FranchiseContentResponse } from "../dto/response/FranchiseContentResponse";
 import { ImageContentResponse } from "../dto/response/ImageContentResponse";
@@ -35,7 +36,7 @@ export class FranchiseContentsUseCase {
             ),
             contents.map((c) => {
                 const imageUrl = iamgeMap.get(c.id) || '';
-                return new ContentPopularResponse(
+                return new ContentFranchiseResponse(
                     c.id,
                     c.title,
                     c.releaseDate,

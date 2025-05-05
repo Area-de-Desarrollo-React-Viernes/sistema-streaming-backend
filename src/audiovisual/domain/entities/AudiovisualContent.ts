@@ -6,6 +6,6 @@ export class AudiovisualContent {
         public exclusiveness: boolean | null = null,
         public views: number | null = null,
         public urlYoutube: string | null = null,
-        public franchiseId: string | null = null
+        public franchiseId: number | null = null
     ) { }
 }

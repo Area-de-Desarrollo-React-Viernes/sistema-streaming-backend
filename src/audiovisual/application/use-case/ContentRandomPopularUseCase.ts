@@ -29,6 +29,7 @@ export class ContentRandomPopularUseCase {
                 c.releaseDate,
                 c.description,
                 c.urlYoutube,
+                c.franchisId,
                 new ImageContentResponse(
                     imageUrl
                 )

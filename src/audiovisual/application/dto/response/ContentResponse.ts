@@ -9,7 +9,7 @@ export class ContentResponse {
         public readonly exclusiveness: boolean,
         public readonly views: number,
         public readonly urlYoutebe: string,
-        public readonly franchise: string,
+        public readonly franchise: number,
         public readonly gener: GenerResponse,
         public readonly image: ImageContentResponse,
     ) {}
