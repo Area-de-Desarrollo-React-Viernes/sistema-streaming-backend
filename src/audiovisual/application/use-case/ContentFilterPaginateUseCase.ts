@@ -1,3 +1,4 @@
+import { title } from "process";
 import { RegistersNotFound } from "../../domain/exceptions/RegistersNotFound";
 import { AudiovisualUserRepository } from "../../domain/repository/AudiovisualUserRepository";
 import { ImageContentService } from "../../domain/service/ImageContentService";
@@ -10,7 +11,7 @@ export class ContentFilterPaginateUseCase {
         private contenUserRepository: AudiovisualUserRepository,
         private imageContentService: ImageContentService
     ) { }
-    async run(gener: string | null, format: string | null, limit: number = 10, page: number = 1): Promise<{
+    async run(gener: string | null, format: string | null, title: string | null, limit: number = 10, page: number = 1): Promise<{
         contents: ContentPopularResponse[],
         paginate: PaginateResponse
     }> {
@@ -20,7 +21,7 @@ export class ContentFilterPaginateUseCase {
             nextPage,
             prevPage,
             totalPage
-        } = await this.contenUserRepository.getContentsFilter(gener, format, limit, page);
+        } = await this.contenUserRepository.getContentsFilter(gener, format, title, limit, page);
         if(data.length === 0){
             throw new RegistersNotFound;
         }

@@ -58,7 +58,7 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
             row.franchise_id
         ));
     }
-    async getContentsFilter(gener: string | null, format: string | null, limit: number, page: number): Promise<{
+    async getContentsFilter(gener: string | null, format: string | null, title: string | null, limit: number, page: number): Promise<{
         data: AudiovisualContent[];
         total: number;
         nextPage: number | null;
@@ -90,6 +90,11 @@ export class AudiovisualUserMysqlPersistence implements AudiovisualUserRepositor
         if (format) {
             query += ' AND ft.name = ?';
             params.push(format);
+        }
+
+        if (title) {
+            query += ' AND c.title LIKE ?';
+            params.push(`%${title}%`);
         }
 
         query += ' ORDER BY c.release_date DESC LIMIT ?, ?';
