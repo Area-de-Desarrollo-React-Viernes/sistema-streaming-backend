@@ -7,7 +7,7 @@ import { FranchiseId } from "../entities/ValueObjects/FranchiseId";
 export interface AudiovisualUserRepository {
     getPopularContent(): Promise<AudiovisualContent[]>;
     getHeroRandomVideo(): Promise<AudiovisualVideo[]>;
-    getContentsFilter(gener: string | null, format: string | null, limit: number, page: number): Promise<{
+    getContentsFilter(gener: string | null, format: string | null, title: string | null,limit: number, page: number): Promise<{
         data: AudiovisualContent[],
         total: number,
         nextPage: number | null,

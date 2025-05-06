@@ -32,7 +32,8 @@ export class ContentUserController {
             const format = (req.query.format as string) ?? null;
             const limit = parseInt(req.query.limit as string) || 10;
             const page = parseInt(req.query.page as string) || 1;
-            const data = await ContentUserContainer.filterContentPaginate.run(gener, format, limit, page);
+            const title = (req.query.title as string) ?? null;
+            const data = await ContentUserContainer.filterContentPaginate.run(gener, format, title, limit, page);
             res.status(200).json({
                 success: true,
                 data
