@@ -7,7 +7,7 @@ export class ContentPopularResponse {
         public readonly realese_date: string,
         public readonly exclusiveness: boolean,
         public readonly views: number,
-        public readonly franchise_id: number,
+        public readonly franchise: number,
         public readonly image: ImageContentResponse
     ) {}
 }
