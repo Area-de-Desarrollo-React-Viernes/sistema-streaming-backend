@@ -7,6 +7,7 @@ import cors from 'cors';
 import contentUserRouter from './audiovisual/routes/ContentUserRouter';
 import generRouter from './audiovisual/routes/GenerRouter';
 import formatRouter from './audiovisual/routes/FormatRouter';
+import paymentRouter from './payments/routes/PaymentRoutes';
 
 const app = express();
 
@@ -27,6 +28,8 @@ app.use('/api/contents', contentUserRouter);
 app.use('/api/geners', generRouter);
 
 app.use('/api/formats', formatRouter);
+
+app.use('/api/payments', paymentRouter);
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 

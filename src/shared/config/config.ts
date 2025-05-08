@@ -28,5 +28,8 @@ export const CONFIG = {
     supabase: {
         url: process.env.SB_URL,
         key: process.env.SB_KEY
+    },
+    mercado_pago: {
+        access_key: process.env.KEY_ACCESS_MP
     }
 }
