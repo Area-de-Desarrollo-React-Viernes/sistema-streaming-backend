@@ -8,8 +8,13 @@ import { responseException } from "../../../shared/utils/ResponseException";
 export class PaymentController {
     async paymentPremium(req: Request, res: Response): Promise<void> {
         try{
-            //const {email, name} = req.body;
-            const data = await paymentContainer.paymentPremium.run(new UserEmail('test_user_852261725@testuser.com'), new UserName('Luis Fernando'));
+            const userId = (req as any).user.sub;
+            const {planType} = req.body;
+            const data = await paymentContainer.paymentPremium.run(
+                userId,
+                new UserEmail('test_user_2128412865@testuser.com'), 
+                new UserName('Zambrano'), 
+                planType);
             res.status(200).json({
                 success: true,
                 data

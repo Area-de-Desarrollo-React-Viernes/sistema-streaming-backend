@@ -10,7 +10,7 @@ export class SubcriptionData {
         public frequencyType: 'days' | 'months',
         public payerEmail: string,
         public initPoint: string,
-        public createdAt: Date
+        public createdAt: string
     ) {}
 }
 
