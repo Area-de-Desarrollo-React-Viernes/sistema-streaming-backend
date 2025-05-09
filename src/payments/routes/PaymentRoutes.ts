@@ -7,7 +7,7 @@ import { changeStatusPayment } from "../infrastructure/webhook/ChangeStatusPayme
 const paymentRouter = Router();
 const paymentController = new PaymentController();
 
-paymentRouter.post('/premium', AuthorizationMiddleware, (req, res) => {
+paymentRouter.post('/plans', AuthorizationMiddleware, (req, res) => {
     paymentController.paymentPremium(req, res);
 });
 paymentRouter.post('/inspect-webhook', changeStatusPayment);
