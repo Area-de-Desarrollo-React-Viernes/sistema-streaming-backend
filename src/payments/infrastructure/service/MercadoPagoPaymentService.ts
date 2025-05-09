@@ -17,10 +17,17 @@ export class MercadoPagoPaymentService implements MercadoPagoService {
                 frequency: subscription.frequency,
                 frequency_type: subscription.frequencyType,
                 transaction_amount: subscription.transactionAmount,
-                currency_id: subscription.currencyId
+                currency_id: subscription.currencyId,
             },
             payer_email: subscription.payerEmail,
         })
+        const formatDate = (dateStr: string): string => {
+            const date = new Date(dateStr);
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        };
         return {
             id: mpSubscription.body.id,
             mpId: mpSubscription.body.payer_id,
@@ -32,7 +39,7 @@ export class MercadoPagoPaymentService implements MercadoPagoService {
             frequencyType: mpSubscription.body.auto_recurring.frequency_type,
             payerEmail: mpSubscription.body.payer_email,
             initPoint: mpSubscription.response.init_point,
-            createdAt: mpSubscription.body.date_created
+            createdAt: formatDate(mpSubscription.body.date_created) as string
         };
     };
 }

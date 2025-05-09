@@ -10,6 +10,6 @@ export class SubscriptionResponse {
         public readonly frequencyType: string,
         public readonly payerEmail: string,
         public readonly init_point: string,
-        public readonly createAt: Date
+        public readonly createAt: string
     ) {}
 }
