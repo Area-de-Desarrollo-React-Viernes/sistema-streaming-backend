@@ -86,18 +86,18 @@ async function migrationRunDatabase() {
 
     await pool.execute(`CREATE TABLE subscriptions(
         id int PRIMARY KEY AUTO_INCREMENT,
+        payer_id VARCHAR(256),
         start_date DATE,
         user_id INT,
-        service_id INT,
-        status_id INT,
-        FOREIGN KEY(user_id) REFERENCES users(id),
-        FOREIGN KEY(service_id) REFERENCES streaming_services(id),
-        FOREIGN KEY(status_id) REFERENCES subscription_statuses(id)
+        service VARCHAR(256),
+        status VARCHAR(256),
+        FOREIGN KEY(user_id) REFERENCES users(id)
         );`);
     console.log('se creo subscriptions')
 
     await pool.execute(`CREATE TABLE payments(
         id int PRIMARY KEY AUTO_INCREMENT,
+        pay_id VARCHAR(256),
         payment_method VARCHAR(256),
         payment_date DATE,
         date_generate DATE,
