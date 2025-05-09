@@ -448,5 +448,275 @@
         "gener_id": 10,
         "user_id": 1,
         "format_type_id": 1
+    },
+    {
+        "id": 51,
+        "title": "Enen no Shouboutai: San no Shou",
+        "description": "Shinra Kusakabe y su compañía de bomberos mientras investigan un misterio global relacionado con los incendios y los infernales",
+        "url": "https://static.wikia.nocookie.net/anime-sin-relleno/images/f/f5/146836l.jpg/revision/latest?cb=20250130133222&path-prefix=es",
+        "gener_id": 1,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 52,
+        "title": "Ore dake Level Up na Ken",
+        "description": "Lo que no te mata te hace más fuerte, pero en el caso de Sung Jinwoo, lo que lo mató lo hizo más fuerte. Después de ser brutalmente asesinado por monstruos en una mazmorra de alto rango, Jinwoo regresó con el Sistema, un programa que solo él puede ver y que eleva su nivel en todos los sentidos. Ahora, está decidido a descubrir los secretos detrás de sus poderes y la mazmorra que los engendró.",
+        "url": "https://m.media-amazon.com/images/M/MV5BM2M4YzdkMTEtMjUyYy00ZWY0LWI5ODQtNGRkZWQ1MzU5MWM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "gener_id": 1,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 53,
+        "title": "Dandadan",
+        "description": "Cuando Momo, una estudiante de preparatoria de una familia de médiums espirituales, conoce a su compañero de clase Okarun, un friki del ocultismo, discuten: Momo cree en los fantasmas pero no en los extraterrestres, y Okarun cree en los extraterrestres pero no en los fantasmas. Cuando resulta que ambos fenómenos son reales, en Momo surge un poder oculto y en Okarun el poder de una maldición. Juntos, deberán desafiar a las fuerzas paranormales que amenazan su mundo.",
+        "url": "https://external-preview.redd.it/dandadan-anime-new-key-visual-v0-qsze1dRShXp6_J4B_wO2Wg21hdrU1Ae8I0TuX6SZLl4.png?width=1080&crop=smart&auto=webp&s=83c97096f3d3b419c2332c93b350acf564af8b0a",
+        "gener_id": 1,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 54,
+        "title": "Kaijuu 8-gou",
+        "description": "En un mundo repleto de criaturas conocidas como Kaiju, Kafka Hibino siempre quiso ser parte del Cuerpo de Defensa. Junto a Mina Ashiro, su amiga de la infancia, prometen que ambos lograrán unirse, sin embargo, la vida los enviará por caminos muy diferentes. Kafka trabaja ahora limpiando cadáveres de Kaiju tras las batallas, y en el trabajo conoce a Ren Ichikawa. Reno está decidido a unirse a las Fuerzas de Defensa, y su pasión y decisión harán que Kafka despierte de nuevo su deseo de unirse a Mina en las Fuerzas de Defensa y proteger a la humanidad.",
+        "url": "https://m.media-amazon.com/images/I/71mwRNQnGZL._AC_UF894,1000_QL80_.jpg",
+        "gener_id": 1,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 55,
+        "title": "Kono Subarashii Sekai ni Shukufuku wo!",
+        "description": "La historia sigue a Kazuma Satō, un joven hikikomori que muere en un accidente y es reencarnado en un mundo de fantasía. Allí, con la ayuda de la diosa Aqua, forma un grupo de aventureros disfuncionales que luchan contra monstruos y se enfrentan a situaciones absurdas con un fuerte enfoque en el humor y la crítica social.",
+        "url": "https://static.wikia.nocookie.net/konosuba/images/f/f4/KonoSuba_Universo.png/revision/latest?cb=20170112000607&path-prefix=es",
+        "gener_id": 2,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 56,
+        "title": "Dungeon Meshi",
+        "description": "Después de que el Reino Dorado sea hundido bajo tierra por un mago demente, su rey emerge, prometiendo todo su tesoro a quien derrote al mago, antes de desmoronarse. Los gremios se ven alentados por esta promesa y atraviesan la mazmorra laberíntica en busca del mago. Laios, el líder de uno de estos gremios, se encuentra con un dragón que aniquila a su grupo y devora a su hermana Falin. A pesar de haber perdido la totalidad de sus suministros y pertenencias, Laios, junto con Marcille, una curandera elfa, y Chilchuck, un ladrón halfling, vuelven a entrar inmediatamente en la mazmorra, decididos a salvar a Falin. Como el tiempo es esencial, Laios sugiere el tabú de comerse a los monstruos de la mazmorra como medio de reunir provisiones. Cuando preparan su primera comida en la mazmorra, un enano llamado Senshi los detiene. ",
+        "url": "https://m.media-amazon.com/images/I/81xL4ikltKL._AC_UF894,1000_QL80_.jpg",
+        "gener_id": 2,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 57,
+        "title": "Re:Zero kara Hajimeru Isekai Seikatsu",
+        "description": "Subaru Natsuki, un chico que se ve transportado a un mundo de fantasía y descubre que tiene la habilidad de revivir después de morir, volviendo al punto justo antes de su muerte. Esto le permite aprender de sus errores y evitar repetir sus muertes.",
+        "url": "https://m.media-amazon.com/images/M/MV5BNTY1M2NjMTItOGFhNi00NDU3LWExNzQtZGY2YWJlYzExNmU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "gener_id": 3,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 58,
+        "title": "JoJo's Bizarre Adventure",
+        "description": "a historia comienza con Jonathan Joestar, que vive con su padre George en Inglaterra con un nivel económico alto. Otro chico Dio Brando es adoptado por ellos dos ya que George creía que su padre Dario Brando les había salvado la vida. Jonathan trata de ser amigo de Dio, pero el plan de Dio es llevar a JoJo a la locura y ganar la confianza de George para conventirse en el heredero de la fortuna Joestar.",
+        "url": "https://cdn.alfabetajuega.com/alfabetajuega/2025/04/poster-promocional-anime-jojos-bizarre-adventure-steel-ball-run.jpg?height=600",
+        "gener_id": 3,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 59,
+        "title": "Jujutsu Kaisen",
+        "description": "Yuuji Itadori es un estudiante de instituto con unas habilidades físicas excepcionales. Todos los días, como rutina, va al hospital a visitar a su abuelo enfermo y decide apuntarse al club de ocultismo del instituto para no dar un palo al agua… Sin embargo, un buen día el sello del talismán que se hallaba escondido en su instituto se rompe, y comienzan a aparecer unos monstruos. Ante este giro de los acontecimientos, Itadori decide adentrarse en el instituto para salvar a sus compañeros. ¿Qué le deparará el destino?",
+        "url": "https://m.media-amazon.com/images/I/81s+jxE5KEL._AC_SL1500_.jpg",
+        "gener_id": 5,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 60,
+        "title": "Kowloon Generic Romance",
+        "description": "Los agentes inmobiliarios Reiko Kujirai y Hajime Kudo trabajan en la melancólica ciudad amurallada de Kowloon. A medida que comparten momentos en común, los sentimientos de Reiko por Hajime se intensifican. Pero cuando encuentra una foto de él con su antigua prometida, se sorprende al ver que aquella mujer es idéntica a ella. Reiko se da cuenta entonces de un escalofriante hecho: no recuerda nada de su pasado.",
+        "url": "https://m.media-amazon.com/images/M/MV5BYmUwMzJiNDAtYjgyZi00YjcxLWJiOGItNmYyOGQxZGU5MmU1XkEyXkFqcGc@._V1_.jpg",
+        "gener_id": 6,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 61,
+        "title": "Ao no Hako",
+        "description": "Taiki Inomata, estudiante de tercer año de secundaria, asiste a la Academia Eimei, una escuela integrada con un importante programa deportivo. Habiendo ingresado en el equipo de bádminton del instituto, Taiki intenta asistir a los entrenamientos abiertos lo antes posible. Pero no importa lo temprano que vaya, siempre llega el segundo al gimnasio. La persona que va un paso por delante de él es Chinatsu Kano, una estudiante de primer año del instituto y que está enamorada de Taiki. Chinatsu es la estrella emergente del equipo de baloncesto, y la diferencia entre ella y Taiki no podría ser mayor. Aunque Taiki es un decente jugador de bádminton, su popularidad no se acerca a la de Chinatsu, lo que hace aún menos probable que sus sentimientos sean recíprocos.",
+        "url": "https://i.pinimg.com/736x/99/be/b1/99beb1431f5f108c48832f9a36d24461.jpg",
+        "gener_id": 6,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 62,
+        "title": "Make Heroine ga Oosugiru!",
+        "description": "Chicas que no lograron conquistar los corazones de las personas que les gustaban: protagonistas perdedoras, es decir, Makeines. Anna Yanami, una chica que adora la comida y la clásica amiga de la infancia. Lemon Yakishio, una chica repleta de energía y muy divertida. Chika Komari, una chica tímida y asustadiza. ¡Una refrescante historia de juventud que nos muestra el lado perdedor del amor con unas protagonistas algo cuestionables! ¡Pierdan y brillen, chicas!",
+        "url": "https://img.animeschedule.net/production/assets/public/img/anime/jpg/default/make-heroine-ga-oosugiru-b9b8e967c3.jpg",
+        "gener_id": 6,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 63,
+        "title": "Kaguya-sama Love is War",
+        "description": "Kaguya-sama: Love is War es una serie de anime basada en un manga que cuenta la historia de dos estudiantes prodigiosos, Kaguya Shinomiya y Miyuki Shirogane, quienes son presidente y vicepresidente del consejo estudiantil en una escuela de élite. Aunque se gustan mutuamente, su orgullo les impide confesar sus sentimientos, y ambos intentan que el otro confiese primero, lo que lleva a una serie de juegos y estrategias.",
+        "url": "https://rukminim2.flixcart.com/image/850/1000/l08gsy80/poster/r/w/a/medium-kaguya-sama-wa-kokurasetai-matte-finish-poster-original-imagc2afjv3rndxt.jpeg?q=90&crop=false",
+        "gener_id": 6,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 64,
+        "title": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+        "description": "Asesinado mientras salvaba unos estudiantes que serían atropellados por un camión, un NEET de 34 años reencarna en un nuevo mundo de magia bajo el nombre de Rudeus Greyrat, un recién nacido. Con conocimiento, experiencia y arrepentimientos de una vida pasada, Rudeus jura llevar una vida plena y no volver a repetir sus errores. Ahora, dotado con un tremendo poder mágico, así como la mentalidad de un hombre adulto, Rudeus es visto como un genio en potencia por sus nuevos padres. Pronto, se verá siendo entrenado por poderosos guerreros, como su padre, un espadachín y una maga llamada Roxy Migurdia.",
+        "url": "https://i.ebayimg.com/images/g/aBsAAOSwsNll1N-T/s-l1200.jpg",
+        "gener_id": 7,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 65,
+        "title": "Dr. Stone",
+        "description": "Senku es un joven extremadamente inteligente con un gran don para la ciencia y una ácida personalidad, y su mejor amigo es Taiju, que es muy buena persona pero más apto para usar los músculos que para pensar. Cuando tras cierto incidente toda la humanidad acaba convertida en piedra, ellos logran despertarse en un mundo miles de años después, con la civilización humana completamente desaparecida y con toda la humanidad congelada en piedra como ellos estuvieron. Ahora es su obligación rescatar a la gente y crear un nuevo mundo.",
+        "url": "https://i.ebayimg.com/images/g/VRwAAOSw9gxd3znJ/s-l1600.jpg",
+        "gener_id": 8,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 66,
+        "title": "Ameku Takao no Suiri Karte",
+        "description": "El Departamento de Diagnóstico Patológico del Hospital General Ten'ikai se ocupa de los casos que otros médicos consideran demasiado difíciles de tratar. También es el lugar donde surgen extraños misterios, que van desde enfermedades inexplicables hasta insólitos asesinatos que ni siquiera la policía puede resolver. En el centro de todo está Takao Ameku, una brillante doctora decidida a descubrir la verdad que se esconde tras estas anomalías.",
+        "url": "https://m.media-amazon.com/images/M/MV5BZGY3OTgzMzEtNmJlNC00ZWIxLWE5YTEtMjg1MDNiNzI0MzYyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "gener_id": 8,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 67,
+        "title": "Kusuriya no Hitorigoto",
+        "description": "Maomao llevaba una vida tranquila ayudando a su padre, un boticario. Todo cambia el día que la venden como sirvienta al palacio del emperador, pero la vida entre nobles y realeza no es para ella. Cuando la familia imperial enferma, ella decide intervenir para encontrar una cura, lo que llama la atención de Jinshi, un guapo oficial de palacio que decide ascenderla como dama de compañía de una de las concubinas del emperador. ¡Su habilidad con la medicina la hará conocida en el palacio por ayudar a resolver muchos misterios!",
+        "url": "https://m.media-amazon.com/images/M/MV5BNjAxMmFjZjgtYjM1ZS00NzdmLTliZDktZmIyMzU5YTBlNDBmXkEyXkFqcGc@._V1_.jpg",
+        "gener_id": 10,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 68,
+        "title": "Dororo",
+        "description": "Daigo Kagemitsu es un temible samurái que entregó su futuro hijo a demonios, a cambio de ver cumplido su sueño de conquistar el país. Al cabo del tiempo, nació un niño deforme, al que faltaban cuarenta y ocho partes de su cuerpo. Su ambicioso padre lo arrojó al río, pero el pequeño logró sobrevivir y, con el tiempo, convertirse en un diestro espadachín llamado Hyakkimaru, «pequeño monstruo». Años después, con la ayuda del joven y avispado Dororo, quien afirma ser el mejor ladrón de Japón, Hyakkimaru emprenderá un viaje a lo largo del cual se enfrentará a los demonios para recuperar las partes de su cuerpo.",
+        "url": "https://ramenparados.com/wp-content/uploads/2018/12/dororo-key-art.jpg",
+        "gener_id": 10,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 69,
+        "title": "Summer Pockets",
+        "description": "Hairi Takahara jamás habría imaginado que el verano sería como un sueño. Cuando lo envían a Torishirojima para ordenar las pertenencias de su difunta abuela, descubre un mar infinito, una nostalgia silenciosa y unas chicas enigmáticas que buscan algo que se escapa a su alcance. A medida que se adapta a la vida en la isla, los recuerdos perdidos empiezan a aflorar y encuentra lo que ni siquiera sabía que había perdido.",
+        "url": "https://m.media-amazon.com/images/M/MV5BNDUxM2FiY2UtMDFlNS00OGFiLTlkNTMtY2ZlYzVlZWUzNTFlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "gener_id": 11,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 70,
+        "title": "Yahari Ore no Seishun Love Comedy wa Machigatteiru",
+        "description": "La comedia romántica gira en torno a un estudiante de instituto bastante antisocial llamado Hachiman Hikigaya y que tiene una distorsionada visión de la vida, aparte de no tener amigos ni mucho menos novia. Cuando ve a sus compañeros de clase hablando alegremente de sus vidas adolescentes, él murmura que son todos una panda de mentirosos. Cuando le preguntan por sus sueños para el futuro, su respuesta es: “no trabajar”. Un profesor sin embargo consigue enrolar a Hachiman en el club de voluntariado, al que resulta que está también apuntada la chica más guapa del instituto, Yukino Yukinoshita.",
+        "url": "https://m.media-amazon.com/images/I/71dtxd8L0jL._AC_UF894,1000_QL80_.jpg",
+        "gener_id": 11,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 71,
+        "title": "Bocchi the Rock!",
+        "description": "Hitori es una chica muy introvertida e incapaz de relacionarse socialmente. Sin embargo, ama la música y su sueño es formar una banda y ser famosa. Un día, mientras iba con su guitarra, se encuentra con una chica que necesita una guitarrista para tocar urgentemente en una banda. A partir de aquí, Hitori tendrá que superar sus miedos para poder alcanzar su sueño.",
+        "url": "https://m.media-amazon.com/images/M/MV5BOTkwODE0NTQtOGVmMC00MDBlLTliYTQtN2MyY2M3Y2MzNDMzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "gener_id": 12,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 72,
+        "title": "Oshi No Ko",
+        "description": "La chica de 16 años, Ai Hoshino, es una talentosa y hermosa idol que es adorada por sus fanáticos. Ella es la personificación de la pureza, pero no todo lo que brilla es oro… Gorou Honda es un ginecólogo de una zona rural y gran fanático de Ai. Entonces, cuando la idol embarazada se presenta en su hospital, está más que desconcertado. Gorou le promete un parto seguro, pero poco sabe él que un encuentro con una misteriosa figura resultaría en su muerte prematura, o eso pensaba. Al abrir sus ojos, Gorou se encuentra en el regazo de su amada idol y descubre que ha renacido como Aquamarine Hoshino, ¡el hijo recién nacido de Ai!.",
+        "url": "https://static.wikia.nocookie.net/oshi-no-ko/images/2/28/Oshi-no-ko-visual.jpg/revision/latest?cb=20220609183925&path-prefix=es",
+        "gener_id": 12,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 73,
+        "title": "Blue Lock",
+        "description": "Tras una desastrosa derrota en la Copa Mundial de 2018, el equipo japonés está pasando por un mal momento. ¿Qué es lo que les falta? Un delantero que sea el mejor, alguien que pueda guiarles hasta la victoria. La federación japonesa está decidida a crear un jugador con una sed de gol única, alguien egoísta con el balón, un jugador que pueda ser capaz de dar la vuelta a un partido que está por perderse... Y para ello reúnen a 300 de las mejores jóvenes promesas de Japón. ¿Quién resultará el elegido como futuro líder del equipo? ¿Quién será capaz de plantar cara con su fuerza y su ego a cualquiera que se ponga en su camino? ¿Quién erá ese jugador más egoísta que nadie?",
+        "url": "https://static.posters.cz/image/1300/240172.jpg",
+        "gener_id": 13,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 74,
+        "title": "Pokemon",
+        "description": "Pokémon se trata de una franquicia de medios que comenzó con videojuegos de rol, donde los jugadores capturan, entrenan y hacen luchar a criaturas llamadas Pokémon. La franquicia se ha expandido a anime, manga, películas, juegos de cartas, y otros productos.",
+        "url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3e362183-7df8-485d-8a1a-2856e51d85ac/de5j3hw-517c1045-6410-4129-90b2-fba20601ab25.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNlMzYyMTgzLTdkZjgtNDg1ZC04YTFhLTI4NTZlNTFkODVhY1wvZGU1ajNody01MTdjMTA0NS02NDEwLTQxMjktOTBiMi1mYmEyMDYwMWFiMjUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gyXfEASSmBBjbLqoQbGcEPfhzYfX8tR1l5VJY1MBleQ",
+        "gener_id": 14,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 75,
+        "title": "Witch Watch",
+        "description": "Morihito Otogi es un estudiante de preparatoria con la fuerza de un ogro. Su vida transcurre en paz hasta que su amiga de la infancia y bruja en prácticas, Nico Wakatsuki, se muda a su casa. Nico está entusiasmada con su reencuentro y convierte a Morihito en su familiar. Ahora Morihito tendrá que centrarse en su misión de proteger a Nico de los peligros que le profetizaron. Así comienzan sus días llenos de misticismo y problemas.",
+        "url": "https://comicbook.com/wp-content/uploads/sites/4/2024/08/c1e5990e-69d5-44c7-8649-421f99e3321d.jpg?w=1024",
+        "gener_id": 15,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 76,
+        "title": "Chainsaw Man",
+        "description": "Denji es un adolescente que vive con un demonio motosierra llamado Pochita. Debido a la deuda que dejó su padre, ha estado viviendo una vida por los suelos mientras paga su deuda recolectando cadáveres de demonios con Pochita. Un día, Denji es traicionado y asesinado. A medida que su conciencia se desvanece, hace un contrato con Pochita y revive como Chainsaw Man, un hombre con un corazón de diablo.",
+        "url": "https://i.redd.it/official-posters-for-chainsaw-man-the-movie-reze-arc-v0-vjntjx2qkb8e1.jpg?width=849&format=pjpg&auto=webp&s=a1609afce3580c3600ec5f45bedcacd2eb8c80ed",
+        "gener_id": 15,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 77,
+        "title": "Nanatsu no Taizai",
+        "description": "Narra la historia de un grupo de caballeros legendarios que, acusados de traición, se encuentran en la clandestinidad. La princesa Elizabeth, buscando ayuda para recuperar su reino, emprende un viaje para encontrar a estos caballeros, conocidos como los Siete Pecados Capitales. ",
+        "url": "https://i.pinimg.com/474x/ae/6a/d0/ae6ad0ae392d25f30c81e0b549d3d42e.jpg",
+        "gener_id": 8,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 78,
+        "title": "Gimai Seikatsu",
+        "description": "Cuando su padre se casa de nuevo, Yuta Asamura comienza a compartir techo con su nueva hermanastra, Saki Ayase, quien es la chica más linda de todo su curso. Estando ambos muy afectados por los recientes divorcios de sus padres, prometen mantener cierta distancia. Sin embargo, lo que comienza siendo respeto, pronto se convierte en algo más gracias a las experiencias que comparten. ¿Es admiración, amor filial o algo más?",
+        "url": "https://i.ebayimg.com/images/g/YZUAAOSwfD5nDSnJ/s-l1200.jpg",
+        "gener_id": 6,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 79,
+        "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu",
+        "description": "Kiyotaka Ayanokouji, un estudiante de la Clase D de una prestigiosa escuela de Tokio, donde los estudiantes tienen una gran libertad y, aparentemente, pueden alcanzar el éxito fácilmente. Sin embargo, la serie explora un sistema de clases y un ambiente competitivo oculto, donde la supervivencia y el logro dependen de la habilidad de navegar por las intrincadas relaciones y el juego de poder entre los estudiantes. ",
+        "url": "https://i0.wp.com/multianime.com.mx/wp-content/uploads/2023/07/Classroom-of-the-Elite-Animes-3rd-Season-Reveals-Key-Visual.jpg?fit=848%2C1200&ssl=1",
+        "gener_id": 3,
+        "user_id": 1,
+        "format_type_id": 3
+    },
+    {
+        "id": 79,
+        "title": "One Punch Man",
+        "description": "Saitama es un héroe que puede derrotar a cualquier enemigo con un solo golpe, una hazaña que, para su desgracia, ha llenado su vida de un aburrimiento aplastante. La historia sigue sus desventuras mientras busca un oponente digno y se une a la Asociación de Héroes, a menudo sin recibir el crédito que merece por sus proezas, mientras protege al mundo de innumerables monstruos y villanos junto a su leal discípulo, el cíborg Genos. Es una serie que parodia con humor el género de superhéroes, llena de acción espectacular y comedia.",
+        "url": "https://krakenperu.com/wp-content/uploads/2019/05/94999-FP4310-One-Punch-Man-Saitama.jpg",
+        "gener_id": 1,
+        "user_id": 1,
+        "format_type_id": 3
     }
 ]
